@@ -1,0 +1,11 @@
+name: Kitchen - esperimenti di Paolo Perego
+markdown: redcarpet
+pygments: true
+source: _source
+destination: _deploy
+timezone: Europe/Rome
+plugins: _plugins
+future: false
+lsi: true
+permalink: /blog/:title
+
