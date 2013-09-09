@@ -93,7 +93,7 @@ desc "Generate jekyll site"
 task :generate do
   puts "## Generating Site with Jekyll"
   system "compass compile --css-dir #{css_dir} --sass-dir #{sass_dir}"
-  system "jekyll"
+  system "jekyll build"
 end
 
 desc "copy dot files for deployment"

@@ -1,13 +1,26 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: page
+title: thesp0nge.com
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="row">
+  <div class="span4">
+    <img class="img-polaroid" src="./images/myself.png" width="300px" />
+  </div>
+  <div class="span7">
+    <section id="whoami">
+
+    <article>
+    <header>
+    <h1>Paolo Perego</h1>
+    <h2>Application security specialist</h2>
+    </header>
+    <p>
+      Ciao e benvenuto, il mio nome è Paolo e sono uno specialista di
+      application security italiano. 37 anni, milanese, papà, praticante di
+      Taekwon-do ITF, chitarrista e blogger.
+    </p>
+    </article>
+    </section>
+  </div>
 </div>
