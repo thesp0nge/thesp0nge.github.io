@@ -1,7 +1,7 @@
 deploy_dir      = "_deploy" 
 source_dir      = "_source"
 css_dir         = "#{deploy_dir}/stylesheets"
-sass_dir        = "#{source_dir}/sass"
+sass_dir        = "#{source_dir}/_sass"
 image_dir       = "#{source_dir}/images"
 
 posts_dir       = "#{source_dir}/_posts"
@@ -92,8 +92,8 @@ end
 desc "Generate jekyll site"
 task :generate do
   puts "## Generating Site with Jekyll"
-  system "compass compile --css-dir #{css_dir} --sass-dir #{sass_dir}"
   system "jekyll build"
+  system "compass compile --css-dir #{css_dir} --sass-dir #{sass_dir}"
 end
 
 desc "copy dot files for deployment"

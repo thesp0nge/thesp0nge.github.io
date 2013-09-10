@@ -14,7 +14,7 @@
     <link href = "/stylesheets/bootstrap-responsive.min.css" rel = "stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/stylesheets/thesp0nge.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,7 +44,7 @@
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
 
-        <div class="navbar navbar-inverse">
+        <div class="navbar">
           <div class="navbar-inner">
             <a class="brand" href="/">Paolo Perego</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
@@ -65,9 +65,10 @@
     <div class="container marketing">
       {{ content }}
 
+      <div class="row"> <hr /> </div>
       <footer>
       <p class="pull-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2013 thesp0nge.com &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <p>&copy; 2013 thesp0nge.com &middot; v{{site.version}} &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div>

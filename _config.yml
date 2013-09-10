@@ -1,4 +1,5 @@
-name: Kitchen - esperimenti di Paolo Perego
+name: Kitchen
+subtitle: Esperimenti di Paolo Perego
 markdown: redcarpet
 pygments: true
 source: _source
@@ -8,4 +9,18 @@ plugins: _plugins
 future: false
 lsi: true
 permalink: /blog/:title
+version: 4.0.0.rc1
+
+image:
+  source: images/originals
+  output: images/
+  presets: 
+    users:
+      attr:
+        class: user-portrait
+        itemprop: image
+      width: 350
+    half:
+      width: 400
+      height: 400
 

@@ -3,7 +3,11 @@ layout: default
 ---
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
+<div>
+<p>This article will take {{ content | reading_time | pluralize: "minute" }} to read.</p>
+</div>
 
 <div class="post">
 {{ content }}
 </div>
+
