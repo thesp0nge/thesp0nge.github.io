@@ -6,6 +6,7 @@ image_dir       = "#{source_dir}/images"
 
 posts_dir       = "#{source_dir}/_posts"
 drafts_dir      = "#{source_dir}/_drafts"
+deploy_branch   = "master"
 
 
 namespace :draft do
@@ -107,12 +108,12 @@ end
 desc "deploy public directory to github pages"
 multitask :push do
   puts "## Deploying branch to Github Pages "
-  (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
+  # (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
   Rake::Task[:copydot].invoke(image_dir, deploy_dir)
   Rake::Task[:copydot].invoke("#{source_dir}/stylesheets", "#{deploy_dir}/stylesheets")
   Rake::Task[:copydot].invoke("#{source_dir}/javascripts", "#{deploy_dir}/javascripts")
-  puts "\n## copying #{asset_dir} to #{deploy_dir}"
-  cp_r "#{asset_dir}/.", deploy_dir
+  # puts "\\n## copying #{asset_dir} to #{deploy_dir}"
+  # cp_r "#{asset_dir}/.", deploy_dir
   cd "#{deploy_dir}" do
     system "git add ."
     system "git add -u"
