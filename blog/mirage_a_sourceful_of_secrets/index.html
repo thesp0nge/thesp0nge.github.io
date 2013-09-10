@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mirage: a sourceful of secrets</title>
+    <meta name="viewport" content="width=device-width">
+    <meta content = "Paolo Perego" name = "author" />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/stylesheets/syntax.css">
+
+    <link href = "/stylesheets/bootstrap.min.css" rel = "stylesheet" />
+    <link href = "/stylesheets/bootstrap-responsive.min.css" rel = "stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/thesp0nge.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22125982-1']);
+      _gaq.push(['_setDomainName', 'thesp0nge.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
+
+  </head>
+  <body>
+
+        <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar">
+          <div class="navbar-inner">
+            <a class="brand" href="/">Paolo Perego</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <div class="container marketing">
+      <h2>Mirage: a sourceful of secrets</h2>
+<p class="meta">23 Aug 2011</p>
+<div>
+<p>This article will take about 1  minute minutes to read.</p>
+</div>
+
+<div class="post">
+<p><a href="http://en.wikipedia.org/wiki/A_Saucerful_of_Secrets">Pink Floyd</a>
+in 1968, drew progressive rock path thanks to <a href="http://en.wikipedia.org/wiki/Syd_Barrett">Syd Barret</a>
+genius.</p>
+
+<p>Myself in Summer 2011 I drow the <a href="https://github.com/thesp0nge/mirage/commit/d6c4b731bb544378273938d9aa706a0794cb734c">Mirage path</a>
+for the next months thanks to... well, thanks to venerable Flex and Bison
+tools.</p>
+
+<p>As I said a <a href="http://thesp0nge.com/2011/07/27/progetti_estivi_e_considerazioni_sparse.html">month ago</a>
+(sorry, Italian post only), mirage will be the <a href="https://www.owasp.org/index.php/Category:OWASP_Orizon_Project">Owasp Orizon</a>
+successor.</p>
+
+<p>From latest post, in English this sentence</p>
+
+<blockquote><p>"L'ultimo punto vuol dire, la progressiva dismissione del progetto Orizon,<br/>che vuol dire che se questo laboratorio avrà successo magari ci sarà un<br/>Owasp Mirage al posto del suo predecessore"</p><footer><strong>thesp0nge</strong> <cite>My Latest Post in This Blog</cite></footer></blockquote>
+
+<p>sounds that if mirage will be a successful laboratory project, than it will
+replace Orizon definitely.</p>
+
+<p>Let&#39;s talk a bit further about what I&#39;ve done this Summer.</p>
+
+<p>First of all, <strong>GNU autotools.</strong>
+I used autotools from GNU to build a package that everyone can </p>
+
+<blockquote><p>"configure; make; make install"</p></blockquote>
+
+<p>I discovered that this approach is hard to follow if the filesystem hierarchy
+is complex.</p>
+
+<p>I have to make some dependency check so the make command will know also about
+the shared libraries it has to build.</p>
+
+<p>Second point, <strong>shared libraries.</strong>
+My idea about mirage architecture is to be plugin based. This approach leads
+the core to be decoupled from the more specialized subsystems. I started
+implementing this via shared libraries but I didn&#39;t find a common data
+structure to hold data from main to libraries helper. <strong>YET.</strong></p>
+
+<p>Now I started hanging around some very basic SAST technique: <a href="https://www.owasp.org/index.php/Crawling_Code">code crawling</a></p>
+
+<p>Breaking down the source code in tokens is straightforward easy with flex,
+and libcrawler is in place doing this.</p>
+
+<p>The idea is to placing in a database (either sql or nosql) the dangerous
+keywords and look the tokens for them. No more, no less.</p>
+
+<p>This one should help me understand how good is the architectural approach I
+choose and I easy is mirage to develop this way.</p>
+
+</div>
+
+
+
+      <div class="row"> <hr /> </div>
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2013 thesp0nge.com &middot; v4.0.0.rc1 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div>
+
+    <!-- /container -->
+    <script src='/javascripts/jquery.js'></script>
+    <script src='/javascripts/bootstrap.min.js'></script>
+    <script src='/javascripts/holder.js'></script>
+  </body>
+</html>
