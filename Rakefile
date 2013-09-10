@@ -109,8 +109,8 @@ multitask :push do
   puts "## Deploying branch to Github Pages "
   (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
   Rake::Task[:copydot].invoke(image_dir, deploy_dir)
-  Rake::Task[:copydot].invoke("#{source}/stylesheets", "#{deploy_dir}/stylesheets")
-  Rake::Task[:copydot].invoke("#{source}/javascripts", "#{deploy_dir}/javascripts")
+  Rake::Task[:copydot].invoke("#{source_dir}/stylesheets", "#{deploy_dir}/stylesheets")
+  Rake::Task[:copydot].invoke("#{source_dir}/javascripts", "#{deploy_dir}/javascripts")
   puts "\n## copying #{asset_dir} to #{deploy_dir}"
   cp_r "#{asset_dir}/.", deploy_dir
   cd "#{deploy_dir}" do
