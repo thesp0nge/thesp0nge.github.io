@@ -20,6 +20,10 @@ image:
         class: user-portrait
         itemprop: image
       width: 350
+    logo:
+      attr:
+        class: img-circle img-polaroid logo
+      width: 300
     half:
       width: 400
       height: 400

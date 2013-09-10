@@ -11,8 +11,6 @@ place: Sottomarina di Chioggia
 
 {% image  winter-horizons.jpg alt="Winter horizons" %}
 
-> ![Winter horizons]({{site.url}}/images/winter-horizons.jpg)
-
 L'immagine di una spiaggia in inverno è un'immagine potente. Lascia spaziare
 lo sguardo e non costringe la mente al cliché mentale dell'equazione
 "mare=vacanza+caciara".
