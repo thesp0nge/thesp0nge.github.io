@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Your crawling experience and on about mirage's name</title>
+    <meta name="viewport" content="width=device-width">
+    <meta content = "Paolo Perego" name = "author" />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/stylesheets/syntax.css">
+
+    <link href = "/stylesheets/bootstrap.min.css" rel = "stylesheet" />
+    <link href = "/stylesheets/bootstrap-responsive.min.css" rel = "stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/thesp0nge.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22125982-1']);
+      _gaq.push(['_setDomainName', 'thesp0nge.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
+
+  </head>
+  <body>
+
+        <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar">
+          <div class="navbar-inner">
+            <a class="brand" href="/">Paolo Perego</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <div class="container marketing">
+      <h2>Your crawling experience and on about mirage's name</h2>
+<p class="meta">01 Sep 2011</p>
+<div>
+<p>This article will take about 1  minute minutes to read.</p>
+</div>
+
+<div class="post">
+<p><a href="https://github.com/thesp0nge/mirage/commit/598d8d6a8c89b8db83d3713a7202dfba9ee9aa18">Yesterday</a>
+was a very productive day for mirage project. In brief I touched the main.c
+source file giving a rekon of a real security tool. I added some time
+handling routines and I bumped the version number to 0.10.</p>
+
+<p>However the very <a href="https://github.com/thesp0nge/mirage/commit/2955fe0e59036811dd19eabd8625d45bf39d6624">previous commit</a>
+was even more important due to the fix on data copying in <a href="https://github.com/thesp0nge/mirage/blob/2955fe0e59036811dd19eabd8625d45bf39d6624/src/list.c">list.c</a>
+file.</p>
+
+<p>I&#39;m very happy because with this fix, mirage is ready for a real source code
+crawling capability, that it&#39;s the easiest thing to add to a static analyzer.</p>
+
+<p>I&#39;m not sure I&#39;ll add some context aware capability since this change will
+add a lot of difficulties in writing libcrawel lex grammar. I don&#39;t want to
+move there the intelligence to detect comments or programmin language
+specific stuff that it will change crawling results.</p>
+
+<p>So, blame at me but source crawling will have a <strong>lot of false positives.</strong></p>
+
+<p>I know and I really don&#39;t care about this since I use crawling just to
+address manual review. So please use mirage crawling results just to
+spotlight the source code areas where you <strong>might</strong>
+find something interesting. But please, check this out manually. </p>
+
+<p>Don&#39;t trust <strong>crawling.</strong></p>
+
+<p>Always double check.</p>
+
+<p>Owasp has it&#39;s own page about <a href="https://www.owasp.org/index.php/Crawling_Code">source code crawling</a></p>
+
+<p>Of course, mirage will implement the recommendiations you can find on the
+Owasp site.</p>
+
+<p>When I first designed <a href="https://www.owasp.org/index.php/Category:OWASP_Orizon_Project">Owasp Orizon</a>
+I introduced mirage as just a application modeling engine choosing that name
+with this meaning: building an error prone source code modeling engine is a <strong>mirage.</strong></p>
+
+<p>I still think this one even today that mirage is going to be Owasp Orizon
+successor.</p>
+
+<p>I don&#39;t think mirage will be the final name and I want to use this period of
+time that the project is mostly unknown to find a good name with a good logo
+to address the Orizon succession.</p>
+
+<p>The only decided issue is that the Owasp Orizon project is <strong>frozen</strong>
+and you have to consider no longer mantained.</p>
+
+</div>
+
+
+
+      <div class="row"> <hr /> </div>
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2013 thesp0nge.com &middot; v4.0.0.rc1 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div>
+
+    <!-- /container -->
+    <script src='/javascripts/jquery.js'></script>
+    <script src='/javascripts/bootstrap.min.js'></script>
+    <script src='/javascripts/holder.js'></script>
+  </body>
+</html>

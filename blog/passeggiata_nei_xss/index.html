@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Passeggiata nei xss</title>
+    <meta name="viewport" content="width=device-width">
+    <meta content = "Paolo Perego" name = "author" />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/stylesheets/syntax.css">
+
+    <link href = "/stylesheets/bootstrap.min.css" rel = "stylesheet" />
+    <link href = "/stylesheets/bootstrap-responsive.min.css" rel = "stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/thesp0nge.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22125982-1']);
+      _gaq.push(['_setDomainName', 'thesp0nge.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
+
+  </head>
+  <body>
+
+        <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar">
+          <div class="navbar-inner">
+            <a class="brand" href="/">Paolo Perego</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <div class="container marketing">
+      <h2>Passeggiata nei xss</h2>
+<p class="meta">04 Jul 2011</p>
+<div>
+<p>This article will take about 3  minutes minutes to read.</p>
+</div>
+
+<div class="post">
+<p>Una doverosa premessa, questo post è scritto con un tono ironico per
+alleggerire l&#39;argomento di oggi: i Cross site scripting appunto. La
+vulnerabilità tuttavia è abbastanza fastidiosa e diffusa al punto tale da
+essere una delle issue più serie quando si parla di sicurezza del codice web.</p>
+
+<p>Chiariamo subito una cosa: i <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">Cross site scripting</a>
+sono una vulnerabilità <em>lato client.</em></p>
+
+<p>E&#39; assolutamente vero che può essere sfruttata per la mancata adozione di
+tecniche di programmazione difensiva lato server, tuttavia il codice
+iniettato dall&#39;attaccante viene sempre eseguito dal browser del nostro
+utente. </p>
+
+<p>Si noti altresì come non basta che l&#39;attaccante riesca ad iniettare (con una
+form, con parametri della request HTTP o con parametri nell&#39;URL) il pattern
+d&#39;attacco per poter sfruttare il XSS. Il browser dell&#39;utente deve navigare
+sulla pagina dove il valore prelevato dall&#39;attaccante viene utilizzato nella
+costruzione della pagina html, in questo caso il codice dell&#39;attaccante verrà
+eseguito. </p>
+
+<p>Per assurdo, se la variabile incriminata non venisse mai usata nell&#39;html in
+uscita, supponiamo ad esempio che venga scritta su un file e mai più
+utilizzata, la vulnerabilità sarebbe impossibile da sfruttare. Per i
+birichini all&#39;ascolto, si in caso di code review ve la segno lo stesso come
+vulnerabilità, di sicuro però il livello di pericolosità della stessa sarebbe <em>low.</em></p>
+
+<p>L&#39;equivalente della minaccia fantasma dei XSS è la cateogoria degli <em>stored xss.</em></p>
+
+<p>Ve la racconto con un esempio pratico, trovato durante un&#39;attività qualche
+tempo fa (tra l&#39;altro quest&#39;esempio dimostra che non tutto può essere trovato
+con un penetration test, ma la code review serve proprio... mettetela a
+budget la prossima volta).</p>
+
+<p>Il mio cliente aveva una form di inserimento dati per permettere alle persone
+che frequentavano i corsi di aggiornamento da lui organizzati di lasciare un
+feedback. Questo feedback veniva poi utilizzato in un&#39;applicazione intranet
+di HR per fare del data mining.</p>
+
+<p>Il penetration test non aveva evidenziato alcuna vulnerabilità. Tuttavia
+andando ad analizzare il codice, mi accorsi che il dato inserito nella form
+veniva salvato senza validazione in questo database condiviso tra le
+applicazioni interne del cliente.</p>
+
+<p>Una POST al volo sulla form ed avevo confermato lo stored XSS, che permetteva
+all&#39;attaccante di inserire dall&#39;esterno del codice javascript che veniva
+eseguito dall&#39;utente delle risorse umane nell&#39;intranet aziendale. </p>
+
+<p>Anche in questo caso, spero di avervi convinto... la vulnerabilità è lato
+client.</p>
+
+<p>Ok, perfetto... ora vi mostro un po&#39; di codice ruby vulnerabile al XSS. Ho
+faticato per scriverlo, ho dovuto usare Sinatra in maniera ignorantissima per
+scrivere una form vulnerabile, però come esempio può andare bene.</p>
+
+<p>Questo è il codice che risponde ad una POST sulla homepage dell&#39;applicazione
+vulnerabile.</p>
+
+<p><code>ruby Questo codice è vulnerabile a Cross Site Scripting, non usatelo.
+post &#39;/&#39; do
+  @you = (params[:subscriber][:email])
+  haml :index, :layout =&gt;:&#39;layouts/default&#39;
+end
+</code></p>
+
+<p>Nella view, rendiamo sfruttabile la vulnerabilità e scriviamo la form in
+maniera assolutamente illogica.</p>
+
+<p>Ho usato HAML come linguaggio per le view.</p>
+
+<p>``` ruby Questo codice è vulnerabile a Cross Site Scripting, non usatelo.
+-if !@you.nil?
+  Hello 
+  =@you</p>
+
+<p>%form{:action=&gt;&#39;/&#39;, :method=&gt;&#39;post&#39;, :id=&gt;&#39;subscriber&#39;}
+  %p
+    %label{:for=&gt;&#39;email&#39;}Subscribe to codesake.com updates (we wont spam... we promise!)
+    %br
+    %input{:type=&gt;&#39;text&#39;, :name=&gt;&#39;subscriber[email]&#39;, :placeholder=&gt;&#39;Enter your email address&#39;, :id=&gt;&#39;email&#39;, :size=&gt;&#39;50&#39;}
+    %br
+    %input{:type=&gt;&#39;submit&#39;, :value=&gt;&#39;Subscribe &rarr;&#39;}
+```</p>
+
+<p>Dov&#39;è la vulnerabilità? All&#39;inizio quando saluto l&#39;utente usando una
+variabile inizializzata nel mio controller con il valore preso dalla form.</p>
+
+<p>Con questo esempio voglio dire che:</p>
+
+<ul>
+<li><p>prendere valori che arrivano dall&#39;esterno nei nostri controller è
+pericoloso. Seguendo la programmazione difensiva tutto quello che viene
+dall&#39;esterno va messo in quarantena, sanitizziato e poi salvato su db,
+usato nell&#39;html... insomma una volta che l&#39;avete reso innocuo potete
+farci quello che volete.</p></li>
+<li><p>quando un attaccante vede una form o un parametro della request, proverà
+a metterci un pattern d&#39;attacco per XSS. Partite da questi ed usate le
+<a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API">ESAPI</a>
+per fare sanitize.</p></li>
+<li><p>i parametri della richiesta HTTP non sono al sicuro. Sanitizzate anche quelli.</p></li>
+</ul>
+
+<p>Nonostante la soluzione al problema sia conosciuta e di semplice attuazione,
+i XSS sono la vulnerabilità web più diffusa sintomo forse che le tecniche di
+programmazione sicura non sono ancora ampiamente diffuse nelle grandi
+enterprise.</p>
+
+<p>Per saperne di più su programmazione sicura ed altro state sintonizzati qui.</p>
+
+</div>
+
+
+
+      <div class="row"> <hr /> </div>
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2013 thesp0nge.com &middot; v4.0.0.rc1 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div>
+
+    <!-- /container -->
+    <script src='/javascripts/jquery.js'></script>
+    <script src='/javascripts/bootstrap.min.js'></script>
+    <script src='/javascripts/holder.js'></script>
+  </body>
+</html>
