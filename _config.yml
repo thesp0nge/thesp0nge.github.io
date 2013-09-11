@@ -22,8 +22,9 @@ image:
       width: 350
     logo:
       attr:
-        class: img-circle img-polaroid logo
-      width: 300
+        class: img-polaroid logo
+      width: 350
+      height: 210
     half:
       width: 400
       height: 400

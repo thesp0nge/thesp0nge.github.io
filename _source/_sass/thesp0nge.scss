@@ -1,3 +1,33 @@
+$sexy-red: #780f14;
+
+div {
+  &.navbar-inner {
+    background: 0;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: 0;
+  }
+}
+
+ul {
+  &.nav{
+    text-transform: uppercase;
+    font-family: "Anonymous Pro", "Delicious", "Courier new", typewriter;
+    font-weight: bold;
+    li{
+      a{
+        color: $sexy-red !important;
+      }
+    }
+  }
+}
+
+img {
+  &.logo {
+    width: 350px;
+    height: 210px;
+  }
+}
 section {
   article {
     footer {
