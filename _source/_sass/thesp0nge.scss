@@ -1,5 +1,16 @@
 $sexy-red: #780f14;
 
+// font-family: 'Ovo', serif;
+// font-family: 'Pathway Gothic One', sans-serif;
+
+body {
+  font-family: 'Ovo', 'Gentium', 'Copse', 'Georgia', serif;
+}
+
+h1 {
+  font-family: 'Pathway Gothic One', 'Bebas Neue', 'League Gothic', 'Graublau Web', sans-serif;
+}
+
 div {
   &.navbar-inner {
     background: 0;
@@ -25,7 +36,7 @@ ul {
 img {
   &.logo {
     width: 350px;
-    height: 210px;
+    height: 300px;
   }
 }
 section {
