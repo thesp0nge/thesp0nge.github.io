@@ -1,13 +1,19 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Nelle puntate precedenti
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<h1>Nelle puntate precedenti...</h1>
+
+<p>
+  {% image cover-list {{ site.posts[0].cover }} %}
+  {{ site.posts[0].title }}
+</p>
+
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

@@ -20,6 +20,16 @@ image:
         class: user-portrait
         itemprop: image
       width: 350
+    cover-list:
+      attr:
+        class: img-polaroid cover-list
+      width: 280
+      height: 184
+    cover-post:
+      attr:
+        class: img-polaroid cover-post
+      width: 730
+      height: 290
     logo:
       attr:
         class: img-polaroid logo

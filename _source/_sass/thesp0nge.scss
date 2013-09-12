@@ -5,6 +5,9 @@ $sexy-red: #780f14;
 
 body {
   font-family: 'Ovo', 'Gentium', 'Copse', 'Georgia', serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  background-image: url('/images/squairy_light.png');
 }
 
 h1 {
@@ -26,9 +29,13 @@ ul {
     font-family: "Anonymous Pro", "Delicious", "Courier new", typewriter;
     font-weight: bold;
     li{
-      a{
-        color: $sexy-red !important;
-      }
+       &.active{
+         a{
+           background: 0 !important;
+           box-shadow: none !important;
+           text-decoration: underline !important;
+         }
+       }
     }
   }
 }
@@ -45,4 +52,8 @@ section {
       font-style: italic;
     }
   }
+}
+
+a {
+  color: $sexy-red !important;
 }
