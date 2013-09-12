@@ -5,6 +5,7 @@ publish: true
 categories: life vespa startup codesake pentest appsec owasp
 title: "Vita senza freni"
 place: Gessate
+cover: 
 ---
 
 E' successo, ieri a 20 metri da una rotonda. Vedo un SUV che entra in rotonda
