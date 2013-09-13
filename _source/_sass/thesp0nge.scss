@@ -7,11 +7,26 @@ body {
   font-family: 'Ovo', 'Gentium', 'Copse', 'Georgia', serif;
   font-size: 16px;
   line-height: 1.5em;
-  background-image: url('/images/squairy_light.png');
+  // background-image: url('/images/squairy_light.png');
+  background-image: url('/images/greyzz.png');
 }
 
 h1 {
   font-family: 'Pathway Gothic One', 'Bebas Neue', 'League Gothic', 'Graublau Web', sans-serif;
+  font-size: 3em;
+  color: $sexy-red;
+}
+
+h2 {
+  font-family: 'Pathway Gothic One', 'Bebas Neue', 'League Gothic', 'Graublau Web', sans-serif;
+  font-size: 2em;
+  color: $sexy-red;
+}
+
+h3 {
+  font-family: 'Pathway Gothic One', 'Bebas Neue', 'League Gothic', 'Graublau Web', sans-serif;
+  font-size: 1.5em;
+  color: $sexy-red;
 }
 
 div {
@@ -26,13 +41,14 @@ div {
 ul {
   &.nav{
     text-transform: uppercase;
-    font-family: "Anonymous Pro", "Delicious", "Courier new", typewriter;
+    font-family: 'Pathway Gothic One', 'Bebas Neue', 'League Gothic', 'Graublau Web', sans-serif;
     font-weight: bold;
     li{
        &.active{
          a{
            background: 0 !important;
            box-shadow: none !important;
+           font-family: "Anonymous Pro", "Delicious", "Courier new", typewriter;
            text-decoration: underline !important;
          }
        }
@@ -56,4 +72,9 @@ section {
 
 a {
   color: $sexy-red !important;
+  &.read-more {
+    text-transform: uppercase;
+    font-family: "Anonymous Pro", "Delicious", "Courier new", typewriter;
+    color: white !important;
+  }
 }
