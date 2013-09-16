@@ -1,15 +1,71 @@
-name: Kitchen
-subtitle: Esperimenti di Paolo Perego
-markdown: redcarpet
+title:        The Kitchen
+tagline:      Esperimenti di Paolo Perego
+description:  Un blog che unisce foto, musica, vino, ricette e considerazioni sparse. 
+url:          thesp0nge.com
+ 
+# Owner/author information
+owner:
+  name:           Paolo Perego
+  avatar:         myself.png
+  bio:            "Specialista di application security italiano. 37 anni, milanese, papà, praticante di Taekwon-do ITF, chitarrista e blogger."
+  email:          paolo@armoredcode.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter:        https://twitter.com/thesp0nge  
+  facebook:       
+  github:         
+  linkedin:       
+  instagram:      
+  lastfm:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:        
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Su di me
+    url: /about
+  - title: Il blog
+    url: /blog
+  - title: Parlami
+    url: /contacts
+  - title: Armoredcode
+    url: http://armoredcode.com
+    external: true
+
+
+timezone: Europe/Rome
+future: false
 pygments: true
+lsi: true
+# markdown: redcarpet
+markdown: kramdown
+
 source: _source
 destination: _deploy
-timezone: Europe/Rome
 plugins: _plugins
-future: false
-lsi: true
 permalink: /blog/:title
-version: 4.0.0.rc1
+version: 4.0.0.rc2
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
 image:
   source: images/originals
