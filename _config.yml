@@ -25,6 +25,12 @@ image:
         class: img-polaroid cover-list
       width: 280
       height: 184
+    cover-list-small:
+      attr:
+        class: img-polaroid cover-list
+      width: 140
+      height: 92
+
     cover-post:
       attr:
         class: img-polaroid cover-post
