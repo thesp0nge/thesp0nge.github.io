@@ -5,9 +5,8 @@ date: 2012-05-17 08:02
 comments: true
 categories: rant itaglia italia banfa corriere corsera corriere-della-sera quotidiani amazon kindle kindle-touch repubblica
 ---
-# Perché è impossibile leggere i quotdiani con il kindle touch?
 
-## Un paese con i firewall mentali
+### 60 milioni di firewall
 
 Che l'Italia sia un paese arretrato dal punto di vista delle infrastrutture e
 della lungimiranza non c'è bisogno certo venga io a dirvelo.

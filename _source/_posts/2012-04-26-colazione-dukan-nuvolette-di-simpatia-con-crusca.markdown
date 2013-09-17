@@ -3,8 +3,10 @@ layout: post
 title: "Colazione dukan: nuvolette di simpatia con crusca"
 date: 2012-04-26 09:10
 comments: true
-categories: dukan dieta ricetta colazione
+tags: [dukan, dieta, ricetta, colazione]
 ---
+
+## Dieta
 
 Lunedì ho iniziato la dieta [Dukan](http://www.dietadukan.it/) ed in 3 giorni
 ho perso 1,6 Kg. Ho finito la fase d'attacco e questo è il mio secondo giorno

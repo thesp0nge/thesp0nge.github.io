@@ -2,9 +2,11 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2013-09-03 19:28:08
-categories: jekyll update
+categories: jekyll update article
 tags: hello-world
-cover: winter-horizons.jpg
+image: 
+  cover: winter-horizons.jpg
+published: false
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
