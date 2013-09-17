@@ -32,6 +32,6 @@ moderna, il blog {{site.title}} parte ancora.
 Di cosa cosa scriverò qui? Bhé... musica, libri, vita, gtd, Milano, famiglia,
 bimbi, taekwondo, un po' di tutto insomma. Non è un blog tecnologico... se vi
 servono cose relative su application security andate su
-[http://armoredcode.com](armoredcode.com). Sempre roba mia, sempre roba buona. 
+[armoredcode.com](http://armoredcode.com). Sempre roba mia, sempre roba buona. 
 
 Enjoy it!
