@@ -1,0 +1,15 @@
+---
+layout: post
+title: Al quarto utente venne il bug
+categories:
+- Simple life
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  delicious: a:3:{s:5:"count";s:1:"0";s:9:"post_tags";s:0:"";s:4:"time";s:10:"1286364109";}
+  reddit: a:2:{s:5:"count";s:1:"0";s:4:"time";s:10:"1286364109";}
+  _elasticsearch_indexed_on: '2010-09-30 10:10:54'
+---
+<div class='posterous_autopost'>Quando uno dei primissimi utenti di questa growing beta di <a href="http://pernataleiovorrei.com">pernataleiovorrei.com</a> mi ha chiesto &quot;Ma perché io vorrei un paio di guanti da moto?&quot; non sapevo se vergognarmi tanto, tantissimo o ultra. <p /><div>Mi ero scordato di recuperare <b>solo</b> i desideri dell&#039;utente correntemente loggato.<br />Ora tutti sapranno che voglio anche un paio di Rebook Pump... poco male.</div><p /><div>Grazie al mio &quot;uno dei primi utenti&quot; che non vuole essere citato per la segnalazione. Tra l&#039;altro grazie per l&#039;idea di usare le google api per recuperare qualche immagine per l&#039;item in oggetto... sicuramente la includo nella release di lancio.</div> <p /><div>Per il momento, mandatemi bug e suggerimenti per <a href="mailto:thesp0nge@gmail.com">mail</a>. Una delle prime cose che dovrò fare sarà includere nel sito un form per segnalare i problemi.</div><div><p /><div><a href="http://pernataleiovorrei.com">pernataleiovorrei.com</a> è una &quot;growing beta&quot; un po&#039; per necessità... usando <a href="http://www.heroku.com">heroku.com</a> come hosting e repository, ad ogni push del mio sorgente corrisponde una messa online... quindi vedrete crescere di funzionalità l&#039;app man mano... spero possiate vedere meno bug grossolani come questo.</div> <p /><div>Il &quot;lancio&quot; avverrà il 25 ottobre, quindi da quel giorno in avanti sarà un po&#039; meno cantiere ma sarà sempre abbastanza live come app.</div><p /><div>Per i curiosi questo è il pezzetto di codice corretto.</div> <div><div class="data type-plain">  <table cellspacing="0" cellpadding="0"> <tr> <td> <pre class="line_numbers"><span id="LID1">1</span> <span id="LID2">2</span> <span id="LID3">3</span> <span id="LID4">4</span> </pre> </td> <td width="100%">  <div class="highlight"><pre /><div class="line" id="LC1">if current_user != nil</div><div class="line" id="LC2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@wishes = Wish.where(:user_id =&gt; current_user.id)</div><div class="line" id="LC3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#snip...</div><div class="line" id="LC4">end</div></pre></div>  </td> </tr> </table>  </div></div><p /><div>Chiedo scusa ai miei, ora 5 utenti per il disguido.</div><p /></div></div>

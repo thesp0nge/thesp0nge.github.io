@@ -12,7 +12,6 @@ image:
 level:
 hn: 
 rd: 
-excerpt: Dopo un anno e poco più riparte il blog thesp0nge.com. Un po' perché gli amici vogliono un blog in italiano che non parli di security, un po' perché lo voglio anche io...
 ---
 
 ## Tanti anni son passati...
@@ -27,5 +26,8 @@ affinare la pronuncia delle parole che contengono la 'r'.
 
 Il mio ginocchio a 2 anni dall'infortunio e uno e mezzo dall'intervento ormai è
 riabilitato e continuo a praticare [http://www.fitae-itf.com](taekwondo-itf).
+
+## E quindi Ciao mondo... ancora
+
 
 
