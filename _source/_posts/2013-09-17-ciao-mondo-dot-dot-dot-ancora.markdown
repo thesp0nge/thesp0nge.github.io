@@ -22,7 +22,7 @@ alla conquista del mondo. Daniele ormai il mondo ce l'ha in pugno, solo deve
 affinare la pronuncia delle parole che contengono la 'r'.
 
 Il mio ginocchio a 2 anni dall'infortunio e uno e mezzo dall'intervento ormai è
-riabilitato e continuo a praticare [http://www.fitae-itf.com](taekwondo-itf).
+riabilitato e continuo a praticare [taekwondo-itf](http://www.fitae-itf.com).
 
 ## E quindi Ciao mondo... ancora
 
@@ -32,6 +32,6 @@ moderna, il blog {{site.title}} parte ancora.
 Di cosa cosa scriverò qui? Bhé... musica, libri, vita, gtd, Milano, famiglia,
 bimbi, taekwondo, un po' di tutto insomma. Non è un blog tecnologico... se vi
 servono cose relative su application security andate su
-[armoredcode.com](http://armoredcode.com). Sempre roba mia, sempre roba buona. 
+[http://armoredcode.com](armoredcode.com). Sempre roba mia, sempre roba buona. 
 
 Enjoy it!
