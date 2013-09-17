@@ -1,7 +1,8 @@
 title:        The Kitchen
 tagline:      Esperimenti di Paolo Perego
 description:  Un blog che unisce foto, musica, vino, ricette e considerazioni sparse. 
-url:          thesp0nge.com
+# url:          http://thesp0nge.com
+url:          http://localhost:4000
  
 # Owner/author information
 owner:
@@ -10,9 +11,9 @@ owner:
   bio:            "Specialista di application security italiano. 37 anni, milanese, papà, praticante di Taekwon-do ITF, chitarrista e blogger."
   email:          paolo@armoredcode.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        https://twitter.com/thesp0nge  
-  facebook:       
-  github:         
+  twitter:        thesp0nge  
+  facebook:       thesp0nge
+  github:         thesp0nge
   linkedin:       
   instagram:      
   lastfm:         
@@ -21,7 +22,7 @@ owner:
   google_plus:    
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics:   UA-22580002-1  
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:        
@@ -31,10 +32,10 @@ bing_verify:
 links:
   - title: Su di me
     url: /about
-  - title: Il blog
-    url: /blog
+  - title: La dispensa
+    url: /la-dispensa
   - title: Parlami
-    url: /contacts
+    url: /parlami
   - title: Armoredcode
     url: http://armoredcode.com
     external: true
@@ -86,7 +87,11 @@ image:
         class: img-polaroid cover-list
       width: 140
       height: 92
-
+    homepage:
+      attr:
+        class: img-polaroid cover-post
+      width: 900
+      height: 200
     cover-post:
       attr:
         class: img-polaroid cover-post

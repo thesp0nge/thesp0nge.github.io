@@ -1,3 +1,5 @@
+require "stringex"
+
 deploy_dir      = "_deploy" 
 source_dir      = "_source"
 css_dir         = "#{deploy_dir}/stylesheets"
@@ -7,6 +9,7 @@ image_dir       = "#{source_dir}/images"
 posts_dir       = "#{source_dir}/_posts"
 drafts_dir      = "#{source_dir}/_drafts"
 deploy_branch   = "master"
+new_post_ext    = "markdown"
 
 
 namespace :draft do
@@ -33,7 +36,9 @@ namespace :draft do
       post.puts "published: true"
       post.puts "featured: false"
       post.puts "categories: "
-      post.puts "thumb:"
+      post.puts "tags: "
+      post.puts "image:"
+      post.puts "\tcover:"
       post.puts "level:"
       post.puts "hn: "
       post.puts "rd: "
@@ -55,15 +60,15 @@ end
 
 namespace :post do
 
-  desc "Begin a new post in #{source_dir}/#{posts_dir}"
+  desc "Begin a new post in #{posts_dir}"
   task :new, :title do |t, args|
     if args.title
       title = args.title
     else
       title = get_stdin("Enter a title for your post: ")
     end
-    mkdir_p "#{source_dir}/#{posts_dir}"
-    filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+    mkdir_p "#{posts_dir}"
+    filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
     if File.exist?(filename)
       abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
     end
@@ -77,7 +82,9 @@ namespace :post do
       post.puts "published: true"
       post.puts "featured: false"
       post.puts "categories: "
-      post.puts "thumb:"
+      post.puts "tags: "
+      post.puts "image:"
+      post.puts "\tcover:"
       post.puts "level:"
       post.puts "hn: "
       post.puts "rd: "
@@ -112,6 +119,7 @@ multitask :push do
   Rake::Task[:copydot].invoke(image_dir, deploy_dir)
   Rake::Task[:copydot].invoke("#{source_dir}/stylesheets", "#{deploy_dir}/stylesheets")
   Rake::Task[:copydot].invoke("#{source_dir}/javascripts", "#{deploy_dir}/javascripts")
+  Rake::Task[:copydot].invoke("#{source_dir}/fonts", "#{deploy_dir}/fonts")
   # puts "\\n## copying #{asset_dir} to #{deploy_dir}"
   # cp_r "#{asset_dir}/.", deploy_dir
   cd "#{deploy_dir}" do
