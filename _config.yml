@@ -1,8 +1,8 @@
 title:        The Kitchen
 tagline:      Esperimenti di Paolo Perego
 description:  Un blog che unisce foto, musica, vino, ricette e considerazioni sparse. 
-# url:          http://thesp0nge.com
-url:          http://localhost:4000
+url:          http://thesp0nge.com
+# url:          http://localhost:4000
  
 # Owner/author information
 owner:
