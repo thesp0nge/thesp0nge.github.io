@@ -8,10 +8,7 @@ featured: false
 categories: 
 tags: 
 image:
-	cover:
-level:
-hn: 
-rd: 
+  cover: hello-world.jpg
 ---
 
 ## Tanti anni son passati...
@@ -29,5 +26,12 @@ riabilitato e continuo a praticare [http://www.fitae-itf.com](taekwondo-itf).
 
 ## E quindi Ciao mondo... ancora
 
+Quindi, dopo molti riavvii degni delle peggiori storie dell'informatica
+moderna, il blog {{site.title}} parte ancora.
 
+Di cosa cosa scriverò qui? Bhé... musica, libri, vita, gtd, Milano, famiglia,
+bimbi, taekwondo, un po' di tutto insomma. Non è un blog tecnologico... se vi
+servono cose relative su application security andate su
+[armoredcode.com](http://armoredcode.com). Sempre roba mia, sempre roba buona. 
 
+Enjoy it!
