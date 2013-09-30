@@ -5,7 +5,7 @@ date: 2013-09-17 08:29
 comments: true
 published: true
 featured: false
-categories: 
+categories: article
 tags: 
 image:
   cover: hello-world.jpg
