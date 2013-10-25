@@ -36,6 +36,9 @@
           {% include author-bio.html %}
         </div>
         <p class="byline"><strong>{{ page.title }}</strong> è stato scritto il <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} e modificato il <time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="{{ site.url }}/about" title="About {{ site.owner.name }}" itemprop="url">{{ site.owner.name }}</a></span></span>.</p>
+
+        <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='452298'></div>
+
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
