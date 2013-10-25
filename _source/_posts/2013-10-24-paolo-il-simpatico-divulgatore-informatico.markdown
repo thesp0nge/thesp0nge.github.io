@@ -23,6 +23,10 @@ ICT.
 
 Le slide le trovate [qui](https://speakerdeck.com/thesp0nge/io-faccio-application-security-e-tu#)
 
+**UPDATE 2**
+
+Ora è possibile giocare alla [scorecard](http://scorecard.armoredcode.com) senza un fastidioso bug che impediva il completamento del questionario.
+
 ## Logistica
 
 A Milano ci sono due poli fieristici, in attesa che rovinino altre zone per
