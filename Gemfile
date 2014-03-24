@@ -8,4 +8,4 @@ gem 'coderay'
 gem 'compass'
 gem 'mini_magick'
 gem "stringex"
-
+gem 'gsl'

@@ -1,5 +1,5 @@
 .sass-cache
 Gemfile.lock
 .DS_Store
-_deploy
+_deploy/*
 *.swp
