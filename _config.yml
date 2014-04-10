@@ -50,7 +50,7 @@ lsi: true
 markdown: kramdown
 
 source: _source
-destination: _deploy
+destination: _site
 plugins: _plugins
 permalink: /blog/:title
 version: 4.0.0.rc2
