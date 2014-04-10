@@ -1,6 +1,6 @@
 require "stringex"
 
-deploy_dir      = "_deploy" 
+deploy_dir      = "_site" 
 source_dir      = "_source"
 css_dir         = "#{deploy_dir}/stylesheets"
 sass_dir        = "#{source_dir}/_sass"
