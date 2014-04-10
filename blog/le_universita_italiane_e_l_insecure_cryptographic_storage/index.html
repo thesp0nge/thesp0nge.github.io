@@ -1,0 +1,326 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Le università italiane e l'insecure cryptographic storage &#8211; The Kitchen</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://thesp0nge.com/images/">
+<meta name="twitter:title" content="Le università italiane e l'insecure cryptographic storage">
+<meta name="twitter:description" content="Un blog che unisce foto, musica, vino, ricette e considerazioni sparse.">
+<meta name="twitter:creator" content="@thesp0nge">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Le università italiane e l'insecure cryptographic storage">
+<meta property="og:description" content="Un blog che unisce foto, musica, vino, ricette e considerazioni sparse.">
+<meta property="og:url" content="http://thesp0nge.com/blog/le_universita_italiane_e_l_insecure_cryptographic_storage">
+<meta property="og:site_name" content="The Kitchen">
+
+
+
+
+
+<link rel="canonical" href="http://thesp0nge.com/blog/le_universita_italiane_e_l_insecure_cryptographic_storage">
+<link href="http://thesp0nge.com/feed.xml" type="application/atom+xml" rel="alternate" title="The Kitchen Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Webfonts -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://thesp0nge.com/stylesheets/main.min.css">
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="http://thesp0nge.com/stylesheets/ie.min.css">
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://thesp0nge.com/javascripts/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://thesp0nge.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://thesp0nge.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://thesp0nge.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://thesp0nge.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://thesp0nge.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://thesp0nge.com/images/apple-touch-icon-144x144-precomposed.png">
+
+<script type="text/javascript">
+//<![CDATA[
+  (function() {
+    var shr = document.createElement('script');
+    shr.setAttribute('data-cfasync', 'false');
+    shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+    shr.type = 'text/javascript'; shr.async = 'true';
+    shr.onload = shr.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      var apikey = 'c5185a9d72e7109a2751eeb16046c3b4';
+      try { Shareaholic.init(apikey); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(shr, s);
+  })();
+//]]>
+</script>
+
+
+</head>
+
+<body class="article" itemscope itemtype="http://schema.org/WebPage">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://thesp0nge.com">The Kitchen</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		    <ul>
+		        
+				<li><a href="http://thesp0nge.com/about" >Su di me</a></li>
+		        
+				<li><a href="http://thesp0nge.com/la-dispensa" >La dispensa</a></li>
+		        
+				<li><a href="http://thesp0nge.com/parlami" >Parlami</a></li>
+		        
+				<li><a href="http://armoredcode.com" target="_blank">Armoredcode</a></li>
+		        
+		        <li><i class="icon-feed"></i> <a href="http://thesp0nge.com/feed.xml" title="Atom/RSS feed">Feed</a>
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+  <div class="article-author-top">
+    <img src="http://thesp0nge.com/images/myself.png" class="bio-photo" alt="Paolo Perego bio photo"></a>
+<h3>Paolo Perego</h3>
+<p>Specialista di application security italiano. 37 anni, milanese, papà, praticante di Taekwon-do ITF, chitarrista e blogger.</p>
+<a href="https://twitter.com/thesp0nge" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+<a href="http://facebook.com/thesp0nge" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+
+
+<a href="http://github.com/thesp0nge" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+  </div>
+  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <div class="headline-wrap">
+      <h1 itemprop="name">Le università italiane e l'insecure cryptographic storage</h1>
+      <h2></h2>
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap" itemprop="text">
+      <p>Ne parla <a href="http://www.ilmessaggero.it/articolo.php?id=155224&amp;sez=HOME_SCIENZA">Il Messaggero</a>
+, ne parla <a href="http://www.repubblica.it/tecnologia/2011/07/06/news/hacker_di_nuovo_all_attaco_stavolta_delle_univesit_italiane-18761507/">La Repubblica</a>
+, ne parla <a href="http://www.corriere.it/cronache/11_luglio_06/hacker-universita_a1303f04-a7f2-11e0-80dd-8681c9f51334.shtml">Il Corriere della Sera</a>
+, ne parlano quindi i principali organi di stampa italiani. Di cosa? Di <a href="http://twitter.com/#!/LulzStorm/status/88377625680158720">questo</a>
+  questo.</p>
+
+<p>Ieri un sedicente gruppo che si fa chiamare LulzStorm, ha annunciato di aver
+bucato alcune web app di Università Italiane e di aver messo online il dump
+di alcuni dati contenenti informazioni sensibili come credenziali di accesso
+e numeri di telefono.</p>
+
+<p>Gli organi di stampa, ovviamente per vendere copie, si soffermano
+sull’aspetto dell’attacco… di quanto cattivi siano gli hacker che si
+intrufolano di notte nelle banche dati altrui e che sottraggano dati preziosi
+ad ignari contribuenti che dormono tranquilli nelle loro case insieme alla
+moglie e a due (rigorosamente due) figli, uno maschio e uno femmina con i
+capelli a caschetto ed un cane bianco in una casa immacolata e piena di luce.
+Tutti perfettamente pettinati e felici alle 7 della mattina raccolti attorno
+al tavolo per mangiare i biscottini.</p>
+
+<iframe width="425px" height="349px" src="http://www.youtube.com/embed/6bjQOwXMoPk" frameborder="0" allowfullscreen="true">
+</iframe>
+
+<p>Gli articoli riportano le dichiarazioni dei rettori. Io le riporto virgolettando. Poi dico la mia</p>
+
+<ul>
+  <li>Dalla Bicocca fanno sapere che «il sistema di autenticazione non è stato violato»,  CorSera</li>
+  <li>L’attacco riguarderebbe «il sito della facoltà di Psicologia che è gestito in outsourcing, hanno preso indirizzi email e nominativi», CorSera</li>
+  <li>Anche qui l’ateneo spiega che «sono informazioni molto generiche sulla
+didattica e sono state prese dal sito di un dipartimento ormai poco
+utilizzato». E non solo: «Le password che appaiono nel file degli
+hacker, che in qualche caso sono state decodificate, non sono quelle
+istituzionali», CorSera</li>
+  <li>Anche il rettore della Sapienza di Roma sminuisce l’entità dell’attacco:
+“E’ stato respinto”. “Non sono stati rubati dati rilevanti - conferma il
+rettore - Abbiamo una Facoltà di Ingegneria informatica e statistica che
+non ha eguali, e di questo vado molto fiero. Era accaduto anche qualche
+tempo fa che provassero ad entrare nei nostri database”,  Repubblica</li>
+</ul>
+
+<p>L’ultimo, il commento del rettore della Sapienza è il più esilarante.
+L’atteggiamento che permea è il classico atteggiamento di chi subisce
+un’intrusione:</p>
+
+<ul>
+  <li>negare l’evidenza - mi hanno bucato</li>
+  <li>minimizzare l’accaduto - i dati non sono rilevanti / il sistema è poco usato</li>
+  <li>cambiare discorso - abbiamo una facoltà che non ha eguali…</li>
+</ul>
+
+<p>Purtroppo nessuna delle massime testate del nostro Paese fa delle domande che
+appaiono lecite e che vengono subito in mente ad una persona che fa
+application security di professione:</p>
+
+<blockquote><p>Ma come è possibile che nel 2011 delle istituzioni memorizzino le password<br />  e altri dati sensibili in chiaro sul database o utilizzando metodi di<br />  cifratura deboli che ne consentono la semplice decodifica?</p></blockquote>
+
+<p>O ancora</p>
+
+<blockquote><p>Ma come è possibile che nel 2011 mettiamo online applicazioni che trattano<br />  dati personali senza il minimo test?</p></blockquote>
+
+<p>Purtroppo nessuna delle massime testate del nostro Paese si sofferma sul
+fatto che la legge sulla Privacy chiede che i dati sensibili degli utenti
+siano memorizzati in forma offuscata su supporti magnetici.</p>
+
+<p>L’Italia ha una legislazione molto forte a tutela del dato… mi chiedo come
+mai le massime istituzioni della scienza del nostro paese permettano a
+cioccolattai di mettere in piedi un’applicazione web e un database non
+curandosi i minimi principi di sicurezza.</p>
+
+<p>Le Università sono fucine di cervelli… li studiano gli IT di domani… in
+ogni Ateneo c’è almeno un corso o un docente che si occupa di sicurezza
+informatica, ma perché, dico io, nel 2011 non si riesce ad organizzare
+internamente corsi di sviluppo sicuro, code review e penetration test sui
+propri siti istituzionali?</p>
+
+<p>Non parlatemi di costi. Avete gli studenti. Che sia il loro progetto pratico
+d’esame, presentare un pentest e una code review del codice del sito
+istituzionale dell’Ateneo.</p>
+
+<p>Volete mettere l’impegno che profonderebbero per avere un 30?</p>
+
+<p>Volete mettere il beneficio di immagine che ne avrebbe l’Università poi? A
+non farsi bucare dal primo che passa? A non doversi inventare proclami
+assurdi come quelli del rettore romano?</p>
+
+<p>Andiamo un po’ alla teoria. Owasp raggruppa il rischio di memorizzare dati
+sensibili in forma non cifrata nella settima voce della sua <a href="https://www.owasp.org/index.php/Top_10_2010-A7">Top 10.</a></p>
+
+<p>Spiega il rischio e spiega come proteggersi.
+Bastava solo leggerla, ma il cioccolattaio di turno forse aveva aperta la
+pagina della gazzetta mentre stava mettendo online quel codice.</p>
+
+<p>Quello che emerge è questo:</p>
+
+<ul>
+  <li>in alcuni atenei non si fa safe coding</li>
+  <li>in alcuni atenei non si fanno pentest e/o code review</li>
+  <li>in alcuni atenei si ignorano le leggi italiane in materia di protezione dei dati sensibili</li>
+  <li>i rettori di alcuni atenei invece di affrontare il problema, minimizzano l’accaduto </li>
+  <li>la stampa del nostro paese invece di evidenziare la palese lacuna di chi mette online del codice scadente, punta il dito contro l’hacker cattivo</li>
+</ul>
+
+<iframe width="425px" height="349px" src="http://www.youtube.com/embed/3Z56nLo5sD0" frameborder="0" allowfullscreen="true">
+</iframe>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          <img src="http://thesp0nge.com/images/myself.png" class="bio-photo" alt="Paolo Perego bio photo"></a>
+<h3>Paolo Perego</h3>
+<p>Specialista di application security italiano. 37 anni, milanese, papà, praticante di Taekwon-do ITF, chitarrista e blogger.</p>
+<a href="https://twitter.com/thesp0nge" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+<a href="http://facebook.com/thesp0nge" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+
+
+<a href="http://github.com/thesp0nge" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+        </div>
+        <p class="byline"><strong>Le università italiane e l'insecure cryptographic storage</strong> è stato scritto il <time datetime="2011-07-07T07:16:25Z" itemprop="datePublished">July 07, 2011</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://thesp0nge.com/about" title="About Paolo Perego" itemprop="url">Paolo Perego</a></span></span>.</p>
+
+        <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='452298'></div>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'thesp0nge'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+      </footer>
+    </div><!-- /.article-wrap -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>Vorresti anche leggere <small class="pull-right">(<a href="http://thesp0nge.com/la-dispensa">Sbircia nella dispensa</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://thesp0nge.com/blog/io-faccio-applichescion-sechiurity-part-1" title="Io faccio applichescion sechiurity: parte 1">Io faccio applichescion sechiurity: parte 1</a></li>
+    
+      <li><a href="http://thesp0nge.com/blog/e-un-duro-mestiere-quello-di-prevenire" title="E' un duro mestiere quello di prevenire">E' un duro mestiere quello di prevenire</a></li>
+    
+      <li><a href="http://thesp0nge.com/blog/passeggiata_nei_xss_strategie_di_difesa" title="Passeggiata nei xss: strategie di difesa">Passeggiata nei xss: strategie di difesa</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    <span>The Kitchen v4.0.0.rc2 - &copy; 2014 Paolo Perego. Powered by <a href="http://jekyllrb.com">Jekyll</a> con una versione del tema <a href="http://mademistakes.com/">Minimal Mistakes</a> leggermente modificata.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://thesp0nge.com/javascripts/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://thesp0nge.com/javascripts/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-22580002-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	        
+
+</body>
+</html>

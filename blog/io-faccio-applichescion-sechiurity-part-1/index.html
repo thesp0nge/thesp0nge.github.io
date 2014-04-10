@@ -1,0 +1,405 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Io faccio applichescion sechiurity: parte 1 &#8211; The Kitchen</title>
+<meta name="description" content="">
+<meta name="keywords" content="banfa, appsec, italia, ironia, mondo-del-lavoro, chiacchieroni, self-made-man">
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://thesp0nge.com/images/">
+<meta name="twitter:title" content="Io faccio applichescion sechiurity: parte 1">
+<meta name="twitter:description" content="Un blog che unisce foto, musica, vino, ricette e considerazioni sparse.">
+<meta name="twitter:creator" content="@thesp0nge">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Io faccio applichescion sechiurity: parte 1">
+<meta property="og:description" content="Un blog che unisce foto, musica, vino, ricette e considerazioni sparse.">
+<meta property="og:url" content="http://thesp0nge.com/blog/io-faccio-applichescion-sechiurity-part-1">
+<meta property="og:site_name" content="The Kitchen">
+
+
+
+
+
+<link rel="canonical" href="http://thesp0nge.com/blog/io-faccio-applichescion-sechiurity-part-1">
+<link href="http://thesp0nge.com/feed.xml" type="application/atom+xml" rel="alternate" title="The Kitchen Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Webfonts -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://thesp0nge.com/stylesheets/main.min.css">
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="http://thesp0nge.com/stylesheets/ie.min.css">
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://thesp0nge.com/javascripts/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://thesp0nge.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://thesp0nge.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://thesp0nge.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://thesp0nge.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://thesp0nge.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://thesp0nge.com/images/apple-touch-icon-144x144-precomposed.png">
+
+<script type="text/javascript">
+//<![CDATA[
+  (function() {
+    var shr = document.createElement('script');
+    shr.setAttribute('data-cfasync', 'false');
+    shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+    shr.type = 'text/javascript'; shr.async = 'true';
+    shr.onload = shr.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      var apikey = 'c5185a9d72e7109a2751eeb16046c3b4';
+      try { Shareaholic.init(apikey); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(shr, s);
+  })();
+//]]>
+</script>
+
+
+</head>
+
+<body class="article" itemscope itemtype="http://schema.org/WebPage">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://thesp0nge.com">The Kitchen</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		    <ul>
+		        
+				<li><a href="http://thesp0nge.com/about" >Su di me</a></li>
+		        
+				<li><a href="http://thesp0nge.com/la-dispensa" >La dispensa</a></li>
+		        
+				<li><a href="http://thesp0nge.com/parlami" >Parlami</a></li>
+		        
+				<li><a href="http://armoredcode.com" target="_blank">Armoredcode</a></li>
+		        
+		        <li><i class="icon-feed"></i> <a href="http://thesp0nge.com/feed.xml" title="Atom/RSS feed">Feed</a>
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+  <div class="article-author-top">
+    <img src="http://thesp0nge.com/images/myself.png" class="bio-photo" alt="Paolo Perego bio photo"></a>
+<h3>Paolo Perego</h3>
+<p>Specialista di application security italiano. 37 anni, milanese, papà, praticante di Taekwon-do ITF, chitarrista e blogger.</p>
+<a href="https://twitter.com/thesp0nge" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+<a href="http://facebook.com/thesp0nge" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+
+
+<a href="http://github.com/thesp0nge" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+  </div>
+  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <div class="headline-wrap">
+      <h1 itemprop="name">Io faccio applichescion sechiurity: parte 1</h1>
+      <h2></h2>
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap" itemprop="text">
+      <h2 id="prologo">Prologo</h2>
+<p>Questo è il talk, più o meno visto che avrei parlato a braccio con un paio di
+slide con su solo foto, che avrei dovuto tenere lo scorso martedì al <a href="http://www.securitysummit.it">Security
+Summit</a>. Purtroppo il solito virus influenzale ha
+privato il pubblico di queste chicche.</p>
+
+<p>Utili? Non lo so. Sicuramente qualcuno si poteva sentire toccato nel profondo
+ed offendersi. Pazienza, putroppo a causa di queste persone il mercato IT
+italiano nel campo della sicurezza è carente di una figura professionale che,
+secondo la mia visione, si sta estinguendo come il panda rosso: l’application
+security specialist.</p>
+
+<h2 id="io-faccio-applichescion-sechiuriti-e-tu">Io faccio applichescion sechiuriti, e tu?</h2>
+
+<h3 id="chi-sono-io">Chi sono io?</h3>
+<p>Ciao, io sono <a href="http://thesp0nge.com">Paolo</a> e sono nel campo della sicurezza
+applicativa da una decina d’anni. Prima come consulente, ora come dipendente,
+spendo la mia giornata lavorativa nel trovare security issue nelle applicazioni
+(web e non) dei miei clienti, farmi odiare da loro perché chiedo di fare dei
+fix, scrivere report di security e fare un po’ di awareness su come si scrive
+del codice sicuro.</p>
+
+<p>Ho un blog in inglese, <a href="http://armoredcode.com">armoredcode.com</a> dove parlo di
+<em>application security</em> unita in modo particolare al mondo del codice scritto in
+<a href="http://www.ruby-lang.org/en">ruby</a><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>Sto scrivendo un <a href="http://dawn.codesake.com">security scanner per codice ruby</a> e
+collaboro con <a href="http://www.owasp.org">Owasp</a> sempre su temi di application
+security e Ruby.</p>
+
+<p>Perché questo talk? Questo talk racconta la mia modesta e personalissima
+visione del marketplace italiano sulla professione dell’application security
+specialist e di cose divertenti che, purtroppo sono accadute veramente e che mi
+fanno dubitare molto di alcuni loschi figuri che si improvvisano maghi del
+cross site scripting. Pronti? Cominciamo.</p>
+
+<h3 id="ieri-ho-piantato-pomodori-ed-ho-aggiustato-uno-sciacquone-ad-incasso">Ieri ho piantato pomodori ed ho aggiustato uno sciacquone ad incasso</h3>
+<p>L’altro giorno lo sciacquone del mio bagno non caricava più l’acqua. Non avevo
+sotto mano il numero di un idraulico ed ho provato ad aprire la cassetta
+incassata per capire se ne veniva fuori qualcosa. Sono arrivato ai pistoncini
+dello scarico, quelli che aprono il flusso verso il water. Da lì il vuoto.</p>
+
+<p>C’era una plastica da smontare, ed era abbastanza chiaro il verso. Tuttavia
+tirando, la resistenza offerta era molta ed il rischio di rompere ancora di più
+era troppo. Ho visto anche un piccolo tubo in metallo che portava l’acqua
+dall’impianto verso le plastiche dello sciacquone. Ho picchiettato il rame con
+un cacciavite e si è sentito un <strong>TOC</strong>, come fosse caduto qualcosa.</p>
+
+<p>Magicamente il cassone ha iniziato a riempirsi. Un sassolino, probabilmente, o
+un pezzo di calcare ostruiva il tubicino in rame impedendo all’acqua di
+scendere verso lo sciacquone.</p>
+
+<p>Mistero risolto. Ho risparmiato l’uscita dell’idraulico, con un po’ di fortuna.
+Ora, posso dire di essere un idraulico? Posso andare in giro casa per casa
+dicendo <em>“hey, ho riparato il mio sciacquone, tranquilli riparo io i vostri
+impianti per la metà del compenso di un professionista con anni di
+esperienza!!! C’è la crisi, approfittane!!!</em>?</p>
+
+<p>Proprio ieri ho piantato nel mio giardino un po’ di piante. Una pianta di
+lamponi, una pianta di mirtilli neri, quattro piantine di fragole, un po’ di
+insalata e dei pomodori datterino. Fare giardinaggio mi rilassa e coltivare
+frutta e verdura che poi mangio mi da un piacevole senso di soddisfazione.</p>
+
+<p>Secondo me il lavoro è anche venuto discretamente bene.</p>
+
+<p>Ora, posso dire di essere un esperto agricoltore? Posso andare in giro per le
+cascine di Gessate e d’intorni dicendo <em>“hey, ho la soluzione hai vostri
+problemi agroalimentari. Pianto tutto io, tranquili. Lasciate perdere la vostra
+esperienza su lune, infestanti, concimi… ci penso io, mi basta solo una
+piccola vanga e delle pianticelle già coltivate comprate al Gigante.”</em>?</p>
+
+<p>Ovviamente, anche se putroppo per alcuni non è così, la risposta ad entrambe le
+domande è un roboante <strong>NO</strong>. Io sono un amatore. Ho riparato il mio impianto
+per pura fortuna, mentre mi diletto in piccolo giardinaggio e, per inciso, ho
+anche sbagliato anti-infestante con il risultato di uccidere mezzo prato del
+mio giardino.</p>
+
+<p>Io, nel campo idraulico e agricolo, <strong>non sono un professionista</strong>.</p>
+
+<h3 id="stranezze-ouaspe-lo-ignoro">Stranezze: Ouaspe? Lo ignoro…</h3>
+<p>Spesso sono stato chiamato nel corso degli anni a fare un po’ di colloqui per
+collaboratori della mia azienda o semplicemente delle chiacchierate informali
+con sedicenti profili senior.</p>
+
+<p>Presentarsi come un senior ed ignorare cosa sia <a href="http://www.owasp.org">owasp</a>,
+cosa sia la Testing Guide (che tra poco uscirà nella versione 4), la Top 10, la
+Developer Guide, è un po’ come fare lo sviluppatore e non conoscere per nulla
+il paradigma <em>model, view, controller</em> o fare il meccanico e non sapere cosa
+sia un albero a camme.</p>
+
+<p>Un altro figuro mi ha stupito descrivendomi il <em>cross site request forgery</em>
+come l’iniezione di codice DHTML all’interno di una pagina. Mi ha stupito non
+tanto per ignorare completamente il cross site request forgery che, posso
+ammetterlo, è abbastanza brigosa da descrivere. Mi ha stupito perché mi ha
+tirato in campo una tecnologia, il DHTML, che non sentivo almeno da una decina
+d’anni.</p>
+
+<p>Ci sono poi due scuole di pensiero tra i figuri: quelli che farebbero fare al
+tool anche il report e quelli duri e puri che il tool non lo usano.</p>
+
+<p>La prima categoria, quelli che si affidano ciecamente al tool, è quella dei
+<em>cucciolotti insicuri</em>. Il <em>cucciolotto insicuro</em> come prima cosa lancia nmap,
+facendo il detect del servizio e prende per oro colato anche il <code>?</code> quando
+nmap non è sicuro del protocollo. Il sistema operativo è <em>chiaramente</em> il primo
+della lunga lista quando nmap ti dice JUST GUESSING, senza se e senza ma e se
+per puro caso la porta 80 (e la 443) sono chiuse non c’è chance di avere un
+test perché “<strong>le applicazioni web sono solo sulla porta 80 o 443</strong>”
+(cucciolotto insicuro incrociato da un cliente forse nel 2005).</p>
+
+<p>Il <em>cucciolotto insicuro</em> ti segna nel report tutti e 2000 i cross site
+scripting che Appscan ti trova su una pagina, su un singolo parametro HTTP,
+ignorando bellamente che la vulnerabilità e l’entry point sono <strong>1</strong> e il
+restante <strong>1999</strong> sono varianti che il tool mette per giustificare
+l’esorbitante costo della licenza.</p>
+
+<p>Errori nella business logic? URL nascoste in javascript che magari portano a
+backend non protetti? Informazioni interessanti per un attacco nascoste nei
+commenti HTML? Se l’AppScan della situazione non lo dice, allora non esistono.
+No way.</p>
+
+<p>Il <em>cucciolotto insicuro</em> quando non può usare il tool sclera, beve un caffè e
+ti scrive nel report che non ci sono vulnerabilità.</p>
+
+<p>La seconda categoria, quella che fa tutto a mano senza tool automatici di
+scansione, è quella dell’<em>appsec macho</em>.</p>
+
+<p>L’<em>appsec macho</em> pensa di ottenere prestigio nello stato sociale se non usa
+strumenti e per questo motivo impiega il triplo del tempo a fare crawling di
+applicazioni complesse perdendosi indietro pezzi importanti e spesso trovando
+l’1% delle issue.</p>
+
+<p>L’<em>appsec macho</em> ti guarda dall’alto verso il basso quando ti vede fare il
+crawling del sito con uno script o con l’Owasp Zap della situazione. Lui non
+scrive report, piazza tutto in un file appunti.txt dicendo che ci guarderà
+dopo.</p>
+
+<p>L’<em>appsec macho</em> spesso come remediation lascia criptiche frasi come “Sanitizza
+l’input” o “Applica la patch”, lasciando allo sviluppatore/sistemista il
+divertimento di capire cosa significhi sanitizzare e soprattutto quale patch
+tra le nmila rilasciate ogni giorno applicare.</p>
+
+<p>C’è anche l’ibrido che il tool lo usa:</p>
+
+<ul>
+  <li>nel contesto sbagliato</li>
+  <li>con le opzioni sbagliate</li>
+  <li>a caso in loop, come se due esecuzioni successive diano risultati diversi</li>
+</ul>
+
+<blockquote><p>Ma almeno in questo caso, il figuro ibrido ha colpito nel segno, ovvero che il<br />tool va usato ed il suo output va preso per quello che è... ovvero l'output di<br />un tool automatico, serve come punto di partenza, non come punto di arrivo.</p></blockquote>
+
+<h3 id="stranezze-sono-tutti-leader-e-tutti-senior">Stranezze, sono tutti leader e tutti senior</h3>
+
+<p>Una cosa veramente strana in questo pazzo mondo dell’IT security italiano è che
+sono tutti leader di mercato e sono tutti senior. Non mi metterò a tracciare
+l’impietoso paragone tra due figure simili e di come vengono trattate a livello
+retributivo in Italia e all’estero. Tuttavia, se molti emigrano ci sarà un
+motivo.</p>
+
+<p>Non mi metterò a parlare di budget che non c’è mai e di come la crisi stia
+colpendo questo settore… esclusivamente da noi, ovviamente.</p>
+
+<p>Non mi metterò a parlare delle conferenze di security, che qui da noi non hanno
+workshop tecnici spinti. Del fatto che anche qui non ci siano budget
+sufficienti per invitare grandi speaker internazionali ed organizzare un paio
+di giornate di sessioni tecniche di valore.</p>
+
+<p>Sembra che in questo mercato la maggior parte della popolazione sia <em>pre sales</em>
+o <em>integrator</em>. Pochi hacker nel senso vero del termine. Pochi professionisti
+veramente in gamba ancora qui in Italia. Questo acme all’incontrario può essere
+la spinta per correggere la spinta ed invertire la tendenza.</p>
+
+<p>Nella seconda parte del post, 2 o 3 hint che derivano dalla mia esperienza e
+che possono aiutare ad avere in casa un appsec specialist competente e
+motivato.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Almeno qui, non tenendo il talk live, mi sono risparmiato le tristi battute su Ruby Rubacuori. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          <img src="http://thesp0nge.com/images/myself.png" class="bio-photo" alt="Paolo Perego bio photo"></a>
+<h3>Paolo Perego</h3>
+<p>Specialista di application security italiano. 37 anni, milanese, papà, praticante di Taekwon-do ITF, chitarrista e blogger.</p>
+<a href="https://twitter.com/thesp0nge" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+<a href="http://facebook.com/thesp0nge" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+
+
+<a href="http://github.com/thesp0nge" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+        </div>
+        <p class="byline"><strong>Io faccio applichescion sechiurity: parte 1</strong> è stato scritto il <time datetime="2014-03-24T08:06:00+01:00" itemprop="datePublished">March 24, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="http://thesp0nge.com/about" title="About Paolo Perego" itemprop="url">Paolo Perego</a></span></span>.</p>
+
+        <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='452298'></div>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'thesp0nge'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+      </footer>
+    </div><!-- /.article-wrap -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>Vorresti anche leggere <small class="pull-right">(<a href="http://thesp0nge.com/la-dispensa">Sbircia nella dispensa</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://thesp0nge.com/blog/paolo-il-simpatico-divulgatore-informatico" title="Paolo il simpatico divulgatore informatico">Paolo il simpatico divulgatore informatico</a></li>
+    
+      <li><a href="http://thesp0nge.com/blog/la-lunga-strada-che-parte-da-ieri" title="La lunga strada che parte da ieri">La lunga strada che parte da ieri</a></li>
+    
+      <li><a href="http://thesp0nge.com/blog/e-un-duro-mestiere-quello-di-prevenire" title="E' un duro mestiere quello di prevenire">E' un duro mestiere quello di prevenire</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    <span>The Kitchen v4.0.0.rc2 - &copy; 2014 Paolo Perego. Powered by <a href="http://jekyllrb.com">Jekyll</a> con una versione del tema <a href="http://mademistakes.com/">Minimal Mistakes</a> leggermente modificata.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://thesp0nge.com/javascripts/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://thesp0nge.com/javascripts/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-22580002-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	        
+
+</body>
+</html>

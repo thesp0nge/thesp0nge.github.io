@@ -1,0 +1,2039 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">The Kitchen</title>
+<subtitle type="text">Esperimenti di Paolo Perego</subtitle>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://thesp0nge.com/feed.xml" />
+<link rel="alternate" type="text/html" href="http://thesp0nge.com" />
+<updated>2014-04-10T10:16:34+02:00</updated>
+<id>http://thesp0nge.com/</id>
+<author>
+  <name>Paolo Perego</name>
+  <uri>http://thesp0nge.com/</uri>
+  <email>paolo@armoredcode.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[E' un duro mestiere quello di prevenire]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/e-un-duro-mestiere-quello-di-prevenire" />
+  <id>http://thesp0nge.com/blog/e-un-duro-mestiere-quello-di-prevenire</id>
+  <published>2014-04-10T07:51:00+02:00</published>
+  <updated>2014-04-10T07:51:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;La moglie e gli amici non sanno cosa fai. &lt;em&gt;Aggiusti i computer&lt;/em&gt;, loro pensano.
+&lt;em&gt;Sei un hacker&lt;/em&gt;, dicono i letterati del mondo dei computer. &lt;em&gt;Sei sempre su
+Internet&lt;/em&gt;, dicono i complottisti del fancazzismo fino all’immancabile &lt;em&gt;tu che
+ne capisci di computer, che ne dici di quel modello di scheda video?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Fare &lt;em&gt;application security&lt;/em&gt; può essere equiparato un po’ al mestiere
+dell’assicuratore e non solo perché tutti ti odiano o perché hai una parcella
+salata. Fare il mio mestiere è difficile perché parli di rischi di disastri che
+in realtà non sono ancora avvenuti e che forse non accadranno mai.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Prendiamo per esempio ad un database al quale non è stato applicato un fix di security del 2008 che permette di entrare a vedere tutti i dati contenuti.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Per sfruttare questa falla, è necessario:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;essere nella stessa VLAN di quel database o comunque avere connettività verso
+il servizio&lt;/li&gt;
+  &lt;li&gt;sapere che dati cercare nel database&lt;/li&gt;
+  &lt;li&gt;cercare un exploit e scaricarlo&lt;/li&gt;
+  &lt;li&gt;saperlo compilare&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Servono quindi delle doti sia logistiche che tecnologiche che non tutti hanno.
+Quindi possiamo dire che la probabilità di accadimento è limitata. Non è zero,
+anzi magari senza che tu te ne accorga qualcuno sta già guardando quei dati
+indisturbato da anni.&lt;/p&gt;
+
+&lt;p&gt;Se un DBA deve valutare l’impatto di installare una patch vecchia di 5 anni che
+magari comporta altre installazioni per compatibilità, che comporta dei test e
+che comporta un fermo macchina, posso &lt;em&gt;capire&lt;/em&gt; qualche perplessità quando
+l’assicuratore (cioé io) cerca di vendergli la polizza (ovvero applica la patch
+perché potrebbero bucarti).&lt;/p&gt;
+
+&lt;p&gt;Non lo giustifico, lo capisco. E’ diverso.&lt;/p&gt;
+
+&lt;p&gt;Tuttavia, bisogna mettersi anche nei miei panni. Chi si assume il rischio di
+una breccia o di un furto di dati? Supponiamo siano i forecast di un nuovo
+prodotto che vengono venduti alla nostra concorrenza, magari non in modo
+eclatante ma un poco alla volta. Io DBA non me ne accorgo. Io insider non mi
+faccio sgamare, centellinando le informazioni e intanto guadagno. Il competitor
+può anticipare le mie mosse sul mercato. L’unica che ci smena è la società
+datore di lavoro sia dell’assicuratore sia del DBA.&lt;/p&gt;
+
+&lt;p&gt;Il mio lavoro è difficile o, meglio, mi mette nella condizione di essere odiato
+da tutti perché cerco di vendere loro delle polizze. Nessuno ha ancora venduto
+quei dati, però io ti espongo un rischio. Rischio che spesso tu, DBA,
+sottovaluti perché la probabilità di accadimento è modesta (ammesso certo tu la
+possa calcolare veramente) ed il lavoro per sanare la falla è molto.&lt;/p&gt;
+
+&lt;p&gt;Il mio lavoro è difficile perché, non solo vieni denigrato dalle persone alle
+quali cerchi di fare &lt;em&gt;awareness&lt;/em&gt;, ma in caso di falla sei anche il
+responsabile.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Clueless Boss: Perché non mi hai fatto niente per evitare che mi bucassero?&lt;br /&gt;Assicuratore: Ma ti avevo spiegato che lasciando admin come password per admin, qualcuno avrebbe potuto fare danni.&lt;br /&gt;Clueless Boss: Non l&#39;avevo capito. Non sei stato in grado di spiegarlo bene, ora fai qualcosa.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Esiste in rete un bellissimo discorso di Julio Velasco sulla cultura
+dell’alibi. Il sunto è, se passiamo il nostro tempo a trovare un alibi ai
+nostri errori, continueremo a commetterli. Commettere uno sbaglio è parte del
+processo naturale di apprendimento. L’aver superato la pubertà non rende
+automatico il non sbagliare più. Questo, ahimé, gente come il clueless boss del
+discorso immaginario qui sopra non lo capisce.&lt;/p&gt;
+
+&lt;p&gt;Sbagliare di solito ferisce l’ego delle persone incompetenti perché mette a
+nudo i loro limiti. Avere qualcuno poi che fa le pulci al proprio lavoro
+evidenziando lacune di security è un’onta che va lavata dileggiando il nostro
+assicuratore.&lt;/p&gt;
+
+&lt;h2 id=&quot;il-brand&quot;&gt;Il brand&lt;/h2&gt;
+
+&lt;p&gt;Supponiamo di avere un software X, di un grande Vendor. Tu trovi un problema
+tale per cui, qualche semplice richiesta fa bloccare questo software X.
+L’atteggiamento di un buon leader, che magari per il software X e la sua
+integrazione ha speso cifre a 5 zeri, chiamerebbe il &lt;em&gt;sales&lt;/em&gt; del grande Vendor
+e gli direbbe:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&#39;Scolta &quot;ninin&quot;, sveglia i tuoi battaglioni di sviluppatori a Bangalore, che il primo cretinetti che si attesta alla rete è in grado di buttare giù il tuo software da nmila euro.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Un buon leader che:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ha fiducia dei propri colleghi&lt;/li&gt;
+  &lt;li&gt;ha capito il problema&lt;/li&gt;
+  &lt;li&gt;ha riconosciuto che si è fidato di un grande nome il suoi software sempre da
+uomini è fatto&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ahimé, viene da se che spesso ci si ferma anche alla fiducia, figuriamoci
+capire il problema. &lt;em&gt;Se è un software di Vendor, è impossibile che abbia
+problemi. E’ sul mercato da anni, ne vuoi sapere più tu di lui?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A nulla vale farglielo vedere. Se nessuno fa quelle richieste, allora il
+problema non c’è. Tu, che ragioni pensando al rischio, abbozzi un &lt;em&gt;ma…&lt;/em&gt; e
+vieni zittito. Perché mai qualcuno dovrebbe fare quelle richieste?&lt;/p&gt;
+
+&lt;p&gt;Il discorso di Velasco, forse l’hanno ascoltato in molti ma l’hanno
+metabolizzato veramente in pochi.&lt;/p&gt;
+
+&lt;h2 id=&quot;sha-7-e-le-pacche-sulle-spalle&quot;&gt;SHA-7 e le pacche sulle spalle&lt;/h2&gt;
+
+&lt;p&gt;La cosa sconvolgente dell’ICT Security è poi che chiunque si può improvvisare
+esperto ed affermare di aver inventato un nuovo algoritmo di cifratura,
+partendo da una funzione di hashing, e passare per innovatore.&lt;/p&gt;
+
+&lt;p&gt;Se poi tu, che fai questo lavoro da anni, trasecoli e muovi delle obiezioni,
+sei solo un criticone invidioso perché non hai inventato nulla, fai una vita
+meschina e Babbo Natale non ti porterà niente di quanto hai chiesto. Abbozzi un
+&lt;em&gt;ma…&lt;/em&gt; e vieni zittito… “lui è un innovatore, si merita pacche sulle spalle
+per il suo grande lavoro”.&lt;/p&gt;
+
+&lt;p&gt;Capisci a questo punto che non solo Matrix esiste, ma sei finito in una zona
+della matrice dove l’Architetto un giorno di è svegliato male ed ha chiamato
+dei consulenti sottopagati di &lt;em&gt;metti il nome della big company che preferisci&lt;/em&gt;
+a scrivere un po’ di junk code.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Il cucchiaio non esiste&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;armoredcodecom-spinoff&quot;&gt;armoredcode.com spinoff&lt;/h2&gt;
+
+&lt;p&gt;Avete visto che è un po’ che non scrivo su
+&lt;a href=&quot;http://armoredcode.com&quot;&gt;armoredcode.com&lt;/a&gt;. Ci sarebbe da parlare di un sacco di
+cose ma, effettivamente, scrivere in inglese non mi viene così fluido ed
+impiego troppo tempo per scrivere un post. Ci sono poi così tanti blog di
+application security in inglese che non so quanto ne valga la pena.&lt;/p&gt;
+
+&lt;p&gt;Contando poi che la maggior parte del mio tempo libero, che non uso per la
+famiglia o per il taekwon-do, è dedicato a
+&lt;a href=&quot;http://dawn.codesake.com&quot;&gt;Codesake::Dawn&lt;/a&gt;, è chiaro che io debba rivedere un
+po’ le mie priorità come technical blogger.&lt;/p&gt;
+
+&lt;p&gt;Quindi, metto in &lt;em&gt;stand by&lt;/em&gt; il progetto armoredcode.com. E’ giunto il momento
+di pensare ad un blog tecnico di sicurezza applicativa in Italiano.&lt;/p&gt;
+
+&lt;p&gt;Dove magari posso spiegare a gente che viene a fare il colloquio con me che il
+cross site request forgery non è l’iniezione di codice DHTML. &lt;/p&gt;
+
+&lt;p&gt;Dove posso scrivere post tecnici nella mia lingua, impiegando meno tempo e
+magari risultando interessante.&lt;/p&gt;
+
+&lt;p&gt;Devo solo trovare un bel nome…&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/e-un-duro-mestiere-quello-di-prevenire&quot;&gt;E' un duro mestiere quello di prevenire&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on April 10, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Io faccio applichescion sechiurity: parte 1]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/io-faccio-applichescion-sechiurity-part-1" />
+  <id>http://thesp0nge.com/blog/io-faccio-applichescion-sechiurity-part-1</id>
+  <published>2014-03-24T08:06:00+01:00</published>
+  <updated>2014-03-24T08:06:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;h2 id=&quot;prologo&quot;&gt;Prologo&lt;/h2&gt;
+&lt;p&gt;Questo è il talk, più o meno visto che avrei parlato a braccio con un paio di
+slide con su solo foto, che avrei dovuto tenere lo scorso martedì al &lt;a href=&quot;http://www.securitysummit.it&quot;&gt;Security
+Summit&lt;/a&gt;. Purtroppo il solito virus influenzale ha
+privato il pubblico di queste chicche.&lt;/p&gt;
+
+&lt;p&gt;Utili? Non lo so. Sicuramente qualcuno si poteva sentire toccato nel profondo
+ed offendersi. Pazienza, putroppo a causa di queste persone il mercato IT
+italiano nel campo della sicurezza è carente di una figura professionale che,
+secondo la mia visione, si sta estinguendo come il panda rosso: l’application
+security specialist.&lt;/p&gt;
+
+&lt;h2 id=&quot;io-faccio-applichescion-sechiuriti-e-tu&quot;&gt;Io faccio applichescion sechiuriti, e tu?&lt;/h2&gt;
+
+&lt;h3 id=&quot;chi-sono-io&quot;&gt;Chi sono io?&lt;/h3&gt;
+&lt;p&gt;Ciao, io sono &lt;a href=&quot;http://thesp0nge.com&quot;&gt;Paolo&lt;/a&gt; e sono nel campo della sicurezza
+applicativa da una decina d’anni. Prima come consulente, ora come dipendente,
+spendo la mia giornata lavorativa nel trovare security issue nelle applicazioni
+(web e non) dei miei clienti, farmi odiare da loro perché chiedo di fare dei
+fix, scrivere report di security e fare un po’ di awareness su come si scrive
+del codice sicuro.&lt;/p&gt;
+
+&lt;p&gt;Ho un blog in inglese, &lt;a href=&quot;http://armoredcode.com&quot;&gt;armoredcode.com&lt;/a&gt; dove parlo di
+&lt;em&gt;application security&lt;/em&gt; unita in modo particolare al mondo del codice scritto in
+&lt;a href=&quot;http://www.ruby-lang.org/en&quot;&gt;ruby&lt;/a&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Sto scrivendo un &lt;a href=&quot;http://dawn.codesake.com&quot;&gt;security scanner per codice ruby&lt;/a&gt; e
+collaboro con &lt;a href=&quot;http://www.owasp.org&quot;&gt;Owasp&lt;/a&gt; sempre su temi di application
+security e Ruby.&lt;/p&gt;
+
+&lt;p&gt;Perché questo talk? Questo talk racconta la mia modesta e personalissima
+visione del marketplace italiano sulla professione dell’application security
+specialist e di cose divertenti che, purtroppo sono accadute veramente e che mi
+fanno dubitare molto di alcuni loschi figuri che si improvvisano maghi del
+cross site scripting. Pronti? Cominciamo.&lt;/p&gt;
+
+&lt;h3 id=&quot;ieri-ho-piantato-pomodori-ed-ho-aggiustato-uno-sciacquone-ad-incasso&quot;&gt;Ieri ho piantato pomodori ed ho aggiustato uno sciacquone ad incasso&lt;/h3&gt;
+&lt;p&gt;L’altro giorno lo sciacquone del mio bagno non caricava più l’acqua. Non avevo
+sotto mano il numero di un idraulico ed ho provato ad aprire la cassetta
+incassata per capire se ne veniva fuori qualcosa. Sono arrivato ai pistoncini
+dello scarico, quelli che aprono il flusso verso il water. Da lì il vuoto.&lt;/p&gt;
+
+&lt;p&gt;C’era una plastica da smontare, ed era abbastanza chiaro il verso. Tuttavia
+tirando, la resistenza offerta era molta ed il rischio di rompere ancora di più
+era troppo. Ho visto anche un piccolo tubo in metallo che portava l’acqua
+dall’impianto verso le plastiche dello sciacquone. Ho picchiettato il rame con
+un cacciavite e si è sentito un &lt;strong&gt;TOC&lt;/strong&gt;, come fosse caduto qualcosa.&lt;/p&gt;
+
+&lt;p&gt;Magicamente il cassone ha iniziato a riempirsi. Un sassolino, probabilmente, o
+un pezzo di calcare ostruiva il tubicino in rame impedendo all’acqua di
+scendere verso lo sciacquone.&lt;/p&gt;
+
+&lt;p&gt;Mistero risolto. Ho risparmiato l’uscita dell’idraulico, con un po’ di fortuna.
+Ora, posso dire di essere un idraulico? Posso andare in giro casa per casa
+dicendo &lt;em&gt;“hey, ho riparato il mio sciacquone, tranquilli riparo io i vostri
+impianti per la metà del compenso di un professionista con anni di
+esperienza!!! C’è la crisi, approfittane!!!&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;Proprio ieri ho piantato nel mio giardino un po’ di piante. Una pianta di
+lamponi, una pianta di mirtilli neri, quattro piantine di fragole, un po’ di
+insalata e dei pomodori datterino. Fare giardinaggio mi rilassa e coltivare
+frutta e verdura che poi mangio mi da un piacevole senso di soddisfazione.&lt;/p&gt;
+
+&lt;p&gt;Secondo me il lavoro è anche venuto discretamente bene.&lt;/p&gt;
+
+&lt;p&gt;Ora, posso dire di essere un esperto agricoltore? Posso andare in giro per le
+cascine di Gessate e d’intorni dicendo &lt;em&gt;“hey, ho la soluzione hai vostri
+problemi agroalimentari. Pianto tutto io, tranquili. Lasciate perdere la vostra
+esperienza su lune, infestanti, concimi… ci penso io, mi basta solo una
+piccola vanga e delle pianticelle già coltivate comprate al Gigante.”&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;Ovviamente, anche se putroppo per alcuni non è così, la risposta ad entrambe le
+domande è un roboante &lt;strong&gt;NO&lt;/strong&gt;. Io sono un amatore. Ho riparato il mio impianto
+per pura fortuna, mentre mi diletto in piccolo giardinaggio e, per inciso, ho
+anche sbagliato anti-infestante con il risultato di uccidere mezzo prato del
+mio giardino.&lt;/p&gt;
+
+&lt;p&gt;Io, nel campo idraulico e agricolo, &lt;strong&gt;non sono un professionista&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;stranezze-ouaspe-lo-ignoro&quot;&gt;Stranezze: Ouaspe? Lo ignoro…&lt;/h3&gt;
+&lt;p&gt;Spesso sono stato chiamato nel corso degli anni a fare un po’ di colloqui per
+collaboratori della mia azienda o semplicemente delle chiacchierate informali
+con sedicenti profili senior.&lt;/p&gt;
+
+&lt;p&gt;Presentarsi come un senior ed ignorare cosa sia &lt;a href=&quot;http://www.owasp.org&quot;&gt;owasp&lt;/a&gt;,
+cosa sia la Testing Guide (che tra poco uscirà nella versione 4), la Top 10, la
+Developer Guide, è un po’ come fare lo sviluppatore e non conoscere per nulla
+il paradigma &lt;em&gt;model, view, controller&lt;/em&gt; o fare il meccanico e non sapere cosa
+sia un albero a camme.&lt;/p&gt;
+
+&lt;p&gt;Un altro figuro mi ha stupito descrivendomi il &lt;em&gt;cross site request forgery&lt;/em&gt;
+come l’iniezione di codice DHTML all’interno di una pagina. Mi ha stupito non
+tanto per ignorare completamente il cross site request forgery che, posso
+ammetterlo, è abbastanza brigosa da descrivere. Mi ha stupito perché mi ha
+tirato in campo una tecnologia, il DHTML, che non sentivo almeno da una decina
+d’anni.&lt;/p&gt;
+
+&lt;p&gt;Ci sono poi due scuole di pensiero tra i figuri: quelli che farebbero fare al
+tool anche il report e quelli duri e puri che il tool non lo usano.&lt;/p&gt;
+
+&lt;p&gt;La prima categoria, quelli che si affidano ciecamente al tool, è quella dei
+&lt;em&gt;cucciolotti insicuri&lt;/em&gt;. Il &lt;em&gt;cucciolotto insicuro&lt;/em&gt; come prima cosa lancia nmap,
+facendo il detect del servizio e prende per oro colato anche il &lt;code&gt;?&lt;/code&gt; quando
+nmap non è sicuro del protocollo. Il sistema operativo è &lt;em&gt;chiaramente&lt;/em&gt; il primo
+della lunga lista quando nmap ti dice JUST GUESSING, senza se e senza ma e se
+per puro caso la porta 80 (e la 443) sono chiuse non c’è chance di avere un
+test perché “&lt;strong&gt;le applicazioni web sono solo sulla porta 80 o 443&lt;/strong&gt;”
+(cucciolotto insicuro incrociato da un cliente forse nel 2005).&lt;/p&gt;
+
+&lt;p&gt;Il &lt;em&gt;cucciolotto insicuro&lt;/em&gt; ti segna nel report tutti e 2000 i cross site
+scripting che Appscan ti trova su una pagina, su un singolo parametro HTTP,
+ignorando bellamente che la vulnerabilità e l’entry point sono &lt;strong&gt;1&lt;/strong&gt; e il
+restante &lt;strong&gt;1999&lt;/strong&gt; sono varianti che il tool mette per giustificare
+l’esorbitante costo della licenza.&lt;/p&gt;
+
+&lt;p&gt;Errori nella business logic? URL nascoste in javascript che magari portano a
+backend non protetti? Informazioni interessanti per un attacco nascoste nei
+commenti HTML? Se l’AppScan della situazione non lo dice, allora non esistono.
+No way.&lt;/p&gt;
+
+&lt;p&gt;Il &lt;em&gt;cucciolotto insicuro&lt;/em&gt; quando non può usare il tool sclera, beve un caffè e
+ti scrive nel report che non ci sono vulnerabilità.&lt;/p&gt;
+
+&lt;p&gt;La seconda categoria, quella che fa tutto a mano senza tool automatici di
+scansione, è quella dell’&lt;em&gt;appsec macho&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;L’&lt;em&gt;appsec macho&lt;/em&gt; pensa di ottenere prestigio nello stato sociale se non usa
+strumenti e per questo motivo impiega il triplo del tempo a fare crawling di
+applicazioni complesse perdendosi indietro pezzi importanti e spesso trovando
+l’1% delle issue.&lt;/p&gt;
+
+&lt;p&gt;L’&lt;em&gt;appsec macho&lt;/em&gt; ti guarda dall’alto verso il basso quando ti vede fare il
+crawling del sito con uno script o con l’Owasp Zap della situazione. Lui non
+scrive report, piazza tutto in un file appunti.txt dicendo che ci guarderà
+dopo.&lt;/p&gt;
+
+&lt;p&gt;L’&lt;em&gt;appsec macho&lt;/em&gt; spesso come remediation lascia criptiche frasi come “Sanitizza
+l’input” o “Applica la patch”, lasciando allo sviluppatore/sistemista il
+divertimento di capire cosa significhi sanitizzare e soprattutto quale patch
+tra le nmila rilasciate ogni giorno applicare.&lt;/p&gt;
+
+&lt;p&gt;C’è anche l’ibrido che il tool lo usa:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;nel contesto sbagliato&lt;/li&gt;
+  &lt;li&gt;con le opzioni sbagliate&lt;/li&gt;
+  &lt;li&gt;a caso in loop, come se due esecuzioni successive diano risultati diversi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Ma almeno in questo caso, il figuro ibrido ha colpito nel segno, ovvero che il&lt;br /&gt;tool va usato ed il suo output va preso per quello che è... ovvero l&#39;output di&lt;br /&gt;un tool automatico, serve come punto di partenza, non come punto di arrivo.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;stranezze-sono-tutti-leader-e-tutti-senior&quot;&gt;Stranezze, sono tutti leader e tutti senior&lt;/h3&gt;
+
+&lt;p&gt;Una cosa veramente strana in questo pazzo mondo dell’IT security italiano è che
+sono tutti leader di mercato e sono tutti senior. Non mi metterò a tracciare
+l’impietoso paragone tra due figure simili e di come vengono trattate a livello
+retributivo in Italia e all’estero. Tuttavia, se molti emigrano ci sarà un
+motivo.&lt;/p&gt;
+
+&lt;p&gt;Non mi metterò a parlare di budget che non c’è mai e di come la crisi stia
+colpendo questo settore… esclusivamente da noi, ovviamente.&lt;/p&gt;
+
+&lt;p&gt;Non mi metterò a parlare delle conferenze di security, che qui da noi non hanno
+workshop tecnici spinti. Del fatto che anche qui non ci siano budget
+sufficienti per invitare grandi speaker internazionali ed organizzare un paio
+di giornate di sessioni tecniche di valore.&lt;/p&gt;
+
+&lt;p&gt;Sembra che in questo mercato la maggior parte della popolazione sia &lt;em&gt;pre sales&lt;/em&gt;
+o &lt;em&gt;integrator&lt;/em&gt;. Pochi hacker nel senso vero del termine. Pochi professionisti
+veramente in gamba ancora qui in Italia. Questo acme all’incontrario può essere
+la spinta per correggere la spinta ed invertire la tendenza.&lt;/p&gt;
+
+&lt;p&gt;Nella seconda parte del post, 2 o 3 hint che derivano dalla mia esperienza e
+che possono aiutare ad avere in casa un appsec specialist competente e
+motivato.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Almeno qui, non tenendo il talk live, mi sono risparmiato le tristi battute su Ruby Rubacuori. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/io-faccio-applichescion-sechiurity-part-1&quot;&gt;Io faccio applichescion sechiurity: parte 1&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on March 24, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Leggero e fresco in 20 gradi di marzo]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/leggero-e-fresco-in-20-gradi-di-marzo" />
+  <id>http://thesp0nge.com/blog/leggero-e-fresco-in-20-gradi-di-marzo</id>
+  <published>2014-03-19T14:36:00+01:00</published>
+  <updated>2014-03-19T14:36:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;A volte penso e ripenso che vorrei poter decidere io di restare accanto a mia
+moglie e ai miei figli finché non siano genitori anche loro e fino a quando le
+rughe sulle mie mani si possano contare a centinaia. Ma non posso farlo. Non
+posso decidere io.&lt;/p&gt;
+
+&lt;p&gt;So che mio padre era una persona molto chiusa e riservata. L’unico ricordo che
+ho è un suo scritto sul mio quaderno di storia in cui racconta di quando
+nacqui. Traspare amore. Trasuda gioia. Quando lo leggo posso immaginare la
+fatica per mettere per iscritto quelle emozioni. Col senno di poi, una
+bellissima lettera d’amore per il figlio. Meno male che lo fece.&lt;/p&gt;
+
+&lt;p&gt;Non è certo solo oggi che penso intensamente a quanto sarebbe bello se fosse
+ancora qui. L’ho pensato due settimane fa quando ho superato l’esame per la
+cintura nera. L’ho pensato 20 minuti fa quando ho aggiustato uno sciacquone da
+incasso. Lo penso spesso quando finisco il rito della nanna e Daniele e Anna
+dormono. L’ho pensato quando ho comprato la mia prima macchina. L’ho pensato
+quando l’Inter era sul tetto del mondo. L’ho pensato quando ho comprato questa
+casa con un po’ di giardino ed il barbeque. L’ho pensato quando ho sposato
+Francesca. L’ho pensato quando sono nati i miei figli.&lt;/p&gt;
+
+&lt;p&gt;Oggi è la festa anche dei papà che sono dentro ai cuori dei propri figli, che
+li hanno messi lì dentro al sicuro… al riparo dalle fatiche e dai su e giù
+della vita.
+E’ la festa di quei papà che non esistono più su questa Terra ma
+non per questo hanno smesso di essere presenti.&lt;/p&gt;
+
+&lt;p&gt;E’ la festa di quei papà che ora continuano ad insegnare con i principi morali.&lt;/p&gt;
+
+&lt;p&gt;E’ la festa di quei papà che ci danno forza quando sopra noi c’è un cielo nero
+come la pece e non abbiamo un riparo.
+E’ la festa di quei papà che silenziosamente invochiamo prima di una battaglia,
+perché ci diano coraggio e forza.
+E’ la festa di quei papà che il regalo più grande l’hanno fatto loro a noi.
+Essere sempre nel nostro cuore.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Dentro al bar con gli angeli e poi al cinema, e fumerai le nuvole, la musica&lt;br /&gt;per te.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/QhzJ9yUP0HI?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/leggero-e-fresco-in-20-gradi-di-marzo&quot;&gt;Leggero e fresco in 20 gradi di marzo&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on March 19, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Resolutions e propositi 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/resolutions-e-propositi-2014" />
+  <id>http://thesp0nge.com/blog/resolutions-e-propositi-2014</id>
+  <published>2014-01-05T23:01:00+01:00</published>
+  <updated>2014-01-05T23:01:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Era il &lt;a href=&quot;http://thesp0nge.com/blog/resolutions_e_propositi_2012/&quot;&gt;2011 e per il 2012 mi fissavo 7 obiettivi&lt;/a&gt; che,
+ovviamente, non ho mantenuto.&lt;/p&gt;
+
+&lt;p&gt;La prima settimana di Gennaio si sta chiudendo e, complici un po’ di
+disintossicazione dal Web, non ho ancora scritto il post dei buoni propositi di
+quest’anno, che non può mancare nel mio arsenale.&lt;/p&gt;
+
+&lt;p&gt;Il 2014 sarà l’anno dei mondiali in Brasile, l’anno della cintura nera (forse,
+tocchiamo ferro), l’anno dei 38 anni. Ci sono molte ma molte cose che vorrei
+augurarmi per questo nuovo anno.&lt;/p&gt;
+
+&lt;p&gt;La parola d’ordine sarà ancora &lt;em&gt;downshift&lt;/em&gt;. Rallentare e godersi la vita.
+Sentire i profumi del mondo. Vedere i colori nascosti tra le pieghe del
+grigiume di una triste Italia destinata al fallimento totale.&lt;/p&gt;
+
+&lt;p&gt;Obiettivo numero &lt;strong&gt;uno&lt;/strong&gt;: la salute. Dopo i bagordi Natalizi la lancetta della
+Wii Fit si è fermata oggi a quota 79.9 Kg. Due considerazioni: grasso vuol dire
+cuore affaticato e possibilità di problemi e la statistica dei maschi della
+famiglia Perego non è al momento a me favorevole. Seconda considerazione: 
+ogni 0.5Kg di grasso corporeo vuol dire 2.5Kg di pressione sulle ginocchia e
+anche i sassi ormai sanno dei miei problemi. Quindi, 2014 vorrà dire
+alimentarsi in maniera più sana.&lt;/p&gt;
+
+&lt;p&gt;Obiettivo numero &lt;strong&gt;due&lt;/strong&gt;: la forma. Poche storie, oltre ad allenarmi 2 volte a
+settimana a taekwondo e 2 volte coi pesi, devo ricominciare a correre. Quindi
+l’obiettivo è di correre 720 Km in un anno.&lt;/p&gt;
+
+&lt;p&gt;Obiettivo numero &lt;strong&gt;tre&lt;/strong&gt;: ordine. Devo essere meno disordinato, questo aiuterà
+sia la produttività che il mio mal di testa quando poi non trovo le cose.&lt;/p&gt;
+
+&lt;p&gt;Obiettivo numero &lt;strong&gt;quattro&lt;/strong&gt;: quotidiani. Non ho mai letto un quotidiano per
+più di 1 settimana di fila. Questo può essere l’anno buono.&lt;/p&gt;
+
+&lt;p&gt;Obiettivo numero &lt;strong&gt;cinque&lt;/strong&gt;: ecletticità. Tornare a scrivere, leggere,
+ascoltare musica, fare foto, fare musica. L’importante è buttare fuori e
+smettere di mascherarmi dietro la corazza del menefreghista cinico.&lt;/p&gt;
+
+&lt;p&gt;E voi? Come renderete magico questo 2014?&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/resolutions-e-propositi-2014&quot;&gt;Resolutions e propositi 2014&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on January 05, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Scuole primarie e i tortellini della mamma]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/scuole-primarie-e-i-tortellini-della-mamma" />
+  <id>http://thesp0nge.com/blog/scuole-primarie-e-i-tortellini-della-mamma</id>
+  <published>2013-12-09T08:06:00+01:00</published>
+  <updated>2013-12-09T08:06:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Ieri ho finalmente capito perché il Partito Democratico non sia riuscito mai a
+vincere un’elezione contro il PDL. Seggio di Gessate a 15 km da Cascina Gobba e
+dal comune di Milano, zona rurale improduttiva secondo alcuni dipendenti ATM
+incrociati in una pagina facebook, cittadina della fascia urbana di Milano, mal
+servita dal servizio pubblico e mal gestita dalla sua giunta di centro
+sinistra, fortunatamente per noi cittadini, alla fine del suo mandato.&lt;/p&gt;
+
+&lt;p&gt;Villa d’Accò, in pieno centro paese. Sono le 12.30 e, dopo un giro coi bimbi ai
+mercatini di Natale a Cambiago, io e mia moglie andiamo a votare le primarie.&lt;/p&gt;
+
+&lt;p&gt;Incipit, non nasco elettore del PD. Anzi, io nel 1994 ho votato Berlusconi
+(credo di essere uno dei pochi a dirlo apertamente) ammaliato dalla promessa
+del cambiamento del pachiderma Italia. 20 anni dopo è finito tutto a puttane,
+non nel senso metaforico del termine.&lt;/p&gt;
+
+&lt;p&gt;Non posso essere elettore del Movimento 5 Stelle. A me sta sul cazzo chi fa
+l’arruffa popoli in piazza. Vero, dovrebbe quindi starmi sul cazzo il 100% del
+possibile elettorato. Tuttavia Beppe Grillo proprio non riesco a digerirlo e,
+il nuovo che avanza, ha dimostrato che si è lasciato convincere, tra scie
+chimiche e microspie, al trasformismo dei salotti romani.&lt;/p&gt;
+
+&lt;p&gt;Mi resta trasformarmi in uno xenofobo troglodita e votare una lega lombarda che
+prima dei 5 stelle ha dimostrato palesemente quanto il dio denaro possa essere
+convincente se devi giocare a fare la banderuola, oppure il partito
+democratico. Vada per la due.&lt;/p&gt;
+
+&lt;p&gt;Dicevo, sono le 12.30 e vado al seggio che, recitano i manifesti, è aperto
+dalle 8 alle 20 per permettere alla base l’espressione di tanto voto
+democratico alla modica cifra di €2 come rimborso spese. €2 per 2 milioni di
+votanti, faranno 4 milioni di euro. Se veramente vi è costato 4 milioni di euro
+organizzare 1 giornata, 1, di votazioni… esticazzi se vi lascio il ministero
+dell’economia.&lt;/p&gt;
+
+&lt;p&gt;Ma tant’è… non ho votato.&lt;/p&gt;
+
+&lt;p&gt;Arrivato al seggio, ricordiamolo di un comune malgovernato dal centro sinistra
+da 8 anni, lo trovo chiuso. Due ragazze di fronte a me laconicamente, “&lt;em&gt;sono
+andati a mangiare, riaprono alle 14.30&lt;/em&gt;”. &lt;/p&gt;
+
+&lt;p&gt;Sono andati a mangiare? Il seggio chiuso per 2 ore (il 16% del tempo di voto)?
+Ieri a mezzogiorno c’era Fiorentina - Roma, un match interessante oppure, vista
+la giornata uggiosa ci saranno stati i tortellini o i pizzoccheri o magari la
+polenta. Ma cristo santo non c’era il seggio aperto. Io il seggio chiuso per
+pranzo come lo spiego a mio figlio quando gli racconterò della decadenza della
+Repubblica Italiana e del perché parliamo tutti cinese?&lt;/p&gt;
+
+&lt;p&gt;Ma dove vogliamo andare? Piccola italia faziosa e litigiosa? Dove vuoi andare
+se chiudi il seggio per la pappa mentre il paese governato a cazzo di cane è
+almeno un paio di legislature che si porta dietro una legge elettorale che
+tutti dicono di voler cambiare ma che alla fine nessuno tocca? Ma dove vuoi
+andare se è dal 1994 che la sinistra parla di conflitto di interessi senza mai
+risolverlo, arrogandosi però una superiorità morale ed intellettuale per
+intercessione divina? &lt;/p&gt;
+
+&lt;p&gt;Dove vuoi andare se la tua popolazione è ormai abituata a non rispettare regole
+e persone. Fatevi un giro come pedoni e guardate quanti rispettano il codice
+della strada. Dove fregare il prossimo è il minimo, dove non si chiede la
+fattura e avere lo sconticino (mai al 20% perché non sappiamo neanche
+mercanteggiare) e poi ci si lamenta se alzano le tasse perché la maggior parte
+del PIL è sommersa?&lt;/p&gt;
+
+&lt;p&gt;Dove vuoi andare se viviamo ancora in un tessuto sociale dove per andare avanti
+devi chiudere l’occhio, fare il favorino, tirare a campare, essere un po’
+paraculo, non prendere mai una posizione. &lt;/p&gt;
+
+&lt;p&gt;Ma dove vogliamo andare? Manco più allo stadio che è pericoloso, allora teniamo
+il culone inchiodato al divano che la mamma ha fatto i tortelli come quando
+eravamo piccoli… e poi c’è il calcio alla TV, tra una sfida a CandyCrash saga
+e l’altra, ovviamente.&lt;/p&gt;
+
+&lt;p&gt;Enjoy it!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/scuole-primarie-e-i-tortellini-della-mamma&quot;&gt;Scuole primarie e i tortellini della mamma&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on December 09, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Il grande salto]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/il-grande-salto" />
+  <id>http://thesp0nge.com/blog/il-grande-salto</id>
+  <published>2013-12-05T10:00:00+01:00</published>
+  <updated>2013-12-05T10:00:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Startup è la buzz world di questi ultimi due anni. Adesso tutti vogliono fare
+impresa e creare la prossima facebook e fare un sacco di soldi. Questo è un
+bene. Avere tante persone che fanno soldi porta ricchezza alla comunità. Non
+fosse altro però che il film &lt;a href=&quot;http://www.thesocialnetwork-movie.com/&quot;&gt;The Social
+Network&lt;/a&gt; stimoli la maggior parte a
+fare social network declinati in qualche salsa.&lt;/p&gt;
+
+&lt;p&gt;C’è il social network di chi ama la musica, il social network di chi ama i
+cani, il social network di chi ama il verde e la natura, il social network di
+chi ama i bambini, il social network degli sporcaccioni, la rete è piena di
+social network e se chiedi l’indicazione ad un passante siamo tutti così social
+che riceviamo un &lt;em&gt;fanculo non sono di qui&lt;/em&gt; come risposta standard.&lt;/p&gt;
+
+&lt;p&gt;Ci sono anche startup che fanno cose innovative, legate principalmente alle
+biotecnologie o alle energie rinnovabili. Però siamo tutti così dentro il
+social, impegnati a cercare un programatore ios o android per la nostra app che
+poi manchiamo occasioni clamorose.&lt;/p&gt;
+
+&lt;p&gt;Esempio. Ho una perdita d’acqua… il muratore mi sta rompendo mezza casa per
+trovare la perdita. Siamo nel 2013, tutti impegnati a fare social-stronzate e
+nessuno che lavori ad un cazzo di sistema a sensori in grado di rilevare
+problemi agli impianti domestici.&lt;/p&gt;
+
+&lt;p&gt;Facciamo un grande salto? Smettiamo per favore di scrivere nuovi social
+network.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/il-grande-salto&quot;&gt;Il grande salto&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on December 05, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[La lunga strada che parte da ieri]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/la-lunga-strada-che-parte-da-ieri" />
+  <id>http://thesp0nge.com/blog/la-lunga-strada-che-parte-da-ieri</id>
+  <published>2013-11-19T08:17:00+01:00</published>
+  <updated>2013-11-19T08:17:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Io se ripenso a tutta la strada che ho fatto fino a qui mi meriterei una
+medaglia. Riguardando indietro ho combattutto tante di quelle volte che,
+chiamarmi stanco di tutto questo a 37 anni appare un cliché. Ma tanto, anche se
+mi chiama stanco, nessuno lotterà per me.&lt;/p&gt;
+
+&lt;p&gt;La maggior parte della gente vede di te la tua immagine presente. Quello che
+fai e quello che dici sono la sommatoria di tanti fattori del tuo presente e
+del tuo passato. &lt;/p&gt;
+
+&lt;p&gt;Se quando eri piccolo, ad esempio, hanno passato interi anni a dirti quanto tu
+fossi inadeguato o quanto tu non valessi niente come puoi essere un uomo sicuro
+di sè? &lt;/p&gt;
+
+&lt;p&gt;Se per la maggior parte del tempo lo hai passato solo perché semplicemente
+nessuno ha dato importanza che tu socializzassi o per il semplice fatto che ti
+hanno trattato come un pacco postale messo un po’ di qui e messo un po’ di là,
+come puoi essere un compagnone? Come puoi essere uno da spogliatoio? &lt;/p&gt;
+
+&lt;p&gt;Bhé, oddio con un po’ di impegno ce la fai. Semplicemente fai il triplo della
+fatica degli altri. Per arrivare dal punto A al punto B, mentre per alcuni è
+qualcosa di naturale, per qualcun altro è una conquista immane contro giudizi
+negativi, contro restrizioni, contro limiti assurdi. Quando arrivi al tuo
+traguardo però te lo godi tutto e tiri fuori artigli alla Wolverine per
+difenderlo.&lt;/p&gt;
+
+&lt;p&gt;Tutta la fatica che hai fatto però, i più non la vedono e se tu la racconti
+loro, non la capiscono. Pensano tu stia esagerando. Dai l’immagine di un
+altezzoso che pensa che sia speciale per essere arrivato a B. &lt;/p&gt;
+
+&lt;h2 id=&quot;ieri&quot;&gt;Ieri&lt;/h2&gt;
+
+&lt;p&gt;Riflettevo proprio ieri, quando un paio di persone mi dicevano che ero un
+figlio cattivo ed irriconoscente che la mente umana è strana. Registra
+brandelli di informazione in qualsiasi formato che apparentemente non hanno
+senso e li tiene lì. Come fa il cervello a capire cosa è importante per il
+futuro e salvarlo? Mistero, forse memorizza tutto e semplicemente certe cose te
+le &lt;em&gt;risparmia&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Più misericordia il mio cervello di certi buontemponi leader di religioni
+monoteiste.&lt;/p&gt;
+
+&lt;p&gt;Ieri, alla bisogna mi è salito alla mente il ricordo di panna montata con
+cannella. La domenica pomeriggio, quando l’Inter giovaca in trasferta (perché
+mio padre era abbonato ma solo alle partite in casa) ricordo che nei mesi
+invernali si usciva per una passeggiata in quel di Cologno Monzese, allegra
+cittadina dell’hinterland milanese che avrei imparato ad odiare alla morte.&lt;/p&gt;
+
+&lt;p&gt;Ricordo &lt;strong&gt;chiaramente&lt;/strong&gt; che mangiavo un cono di panna montata con cannella in
+un bar che fa angolo della via parallela a via Sentati, per andare verso la
+metropolitana per intenderci, dove una volta c’era l’acquedotto. Per inciso,
+per anni ho continuato a comprare in quel bar l’abbonamento della
+metropolitana.&lt;/p&gt;
+
+&lt;p&gt;Ricordo &lt;strong&gt;chiaramente&lt;/strong&gt; la visuale che avevo attorno agli 8-10 anni perché il
+mio campo visivo è coperto da una giacca di pelle di color beige chiaro, per
+inciso era la manica della giacca di mio padre. La cosa sorprendete è che se
+ripenso a quei momenti io vedo veramente il campo visivo beige. &lt;/p&gt;
+
+&lt;p&gt;Incredibile.&lt;/p&gt;
+
+&lt;p&gt;Ci sono informazioni che però il mio cervello non rilascia. Ero felice? Ero
+sereno? Ho chiesto ad alcuni amici di allora di aiutarmi a ricordare ma,
+chiaramente, le chiacchierate tra bambini volano leggere negli anni e si
+perdono tra i solchi delle varie vite. &lt;/p&gt;
+
+&lt;p&gt;Il sapore alla cannella no, quello rimane.&lt;/p&gt;
+
+&lt;h2 id=&quot;al-destino-si-sa-non-manca-il-senso-dellumorismo&quot;&gt;Al destino si sa non manca il senso dell’umorismo&lt;/h2&gt;
+
+&lt;p&gt;Una delle frasi che ricordo chiaramente di mio padre era la sua esortazione a
+non giocare mai in porta. Il concetto era che il portiere ha tutte le
+responsabilità e non si prende mai i meriti di niente. La cosa buffa è che dal
+24 Novembre 1986 io ho dovuto aspettare di conoscere mia moglie 19 anni dopo
+per avere qualcuno che mi desse il merito di qualcosa. &lt;/p&gt;
+
+&lt;p&gt;Ho dovuto giocare in porta, giocoforza, in una partita assurda. Una partita
+giocata male, con regole sbagliate. Una partita dove ci sono 5 o 6 palloni e
+c’è una porta sola ed una sola squadra contro. A volte hai un bonus e mettono
+uno o due difensori ma è un bonus, dura poco. Per il resto sono pallonate.
+Pallonate. La cosa positiva, riguardando indietro, è che incasso poco
+nonostante le pallonate. Ma nessuno se ne accorge, presi come sono dal
+difendere chi attacca.&lt;/p&gt;
+
+&lt;p&gt;Per inciso, quando ho giocato a calcio ho giocato veramente in porta. Alla fine
+credo che il mio subconscio si sia immedesimato in quello che subiva. Le palle
+erano tutte mie tranne quelle alte… sono alto un metro ed una sega dopotutto.&lt;/p&gt;
+
+&lt;h2 id=&quot;adesso-vai-e-fai-questo&quot;&gt;Adesso vai e fai questo&lt;/h2&gt;
+
+&lt;p&gt;Un altro ricordo, presente, di mio padre accade in un giorno qualsiasi di un
+anno qualsiasi prima ovviamente dei 10 anni. Siamo all’oratorio San Marco di
+Cologno Monzese, centro pieno di misericordia e molto ben disposto verso le
+persone nuove. Io non volevo fermarmi a giocare, non conoscevo nessuno. Le mie
+giornate di solito trascorrevano in casa con mia nonna, i miei lavoravano tutto
+il giorno e quindi il mio cliché era che giocare da solo era una figata immane
+o meglio, era l’unica alternativa.&lt;/p&gt;
+
+&lt;p&gt;Ricordo &lt;strong&gt;chiaramente&lt;/strong&gt; che mio padre mi diede 10 centesimi e disse &lt;em&gt;“adesso tu
+vai lì dentro (il bar dell’oratorio) ti prendi una spuma e giochi con quei
+bambini”&lt;/em&gt; con la veemenza e la decisione che di solito uso per convincere
+Daniele che lavarsi la faccia non è un crimine contro l’umanità.&lt;/p&gt;
+
+&lt;p&gt;Credo che in fondo mio padre era schiacciato da due caratteri molto forti e
+molto in opposizione, mia mamma e mia nonna, e che covasse tutto dentro…
+incapace forse di reagire. Credo che in qualche modo lui in quel momento fosse
+incazzato nero per come io avevo &lt;em&gt;non&lt;/em&gt; imparato a relazionarmi. Non lo giudico.
+Per anni ho lasciato agire mia madre per evitare fastidi e vessazioni. Forse lo
+capisco. Così come mi pare assurdo che nessuno mi portasse a giocare a pallone,
+lui che era &lt;strong&gt;matto&lt;/strong&gt; letteralmente per l’Inter e per il calcio.&lt;/p&gt;
+
+&lt;p&gt;Mi portarono in piscina obbligati dal medico perché iniziavo ad avere una forma
+d’asma allergica. La prima volta che mio padre mi portò in piscina era
+arrabbiato nero, non voleva farlo. Piano a piano qualche pezzo di puzzle va nel
+verso giusto. &lt;/p&gt;
+
+&lt;h2 id=&quot;dicevamo-ricordi&quot;&gt;Dicevamo, ricordi&lt;/h2&gt;
+
+&lt;p&gt;Ricordi belli? Pochi. Veramente pochi. Lo dico ora con la consapevolezza che
+invece ne vorrei a valanga per coprire questi 27 anni. Ne vorrei veramente
+tanti. &lt;/p&gt;
+
+&lt;p&gt;Ricordi brutti? Troppi. Ricordi che adesso diventano domande. Domande alle
+quali non puoi più dare risposte. Ti accorgi però che, mentre i tuoi coetanei
+avevano una infanzia (bella o brutta per ora non importa, facciamo che per la
+maggioranza fosse neutra) tu non l’avevi. &lt;/p&gt;
+
+&lt;p&gt;Qualcuno, di materiale, che avrebbe dovuto in quel momento proteggerti te la
+portò via, insieme ad un sacco di giocattoli in un freddo natale del 1986.&lt;/p&gt;
+
+&lt;p&gt;Qualcun altro lasciò fare. Incurante, inconsapevole… non lo so. So solo che
+lasciò fare. &lt;/p&gt;
+
+&lt;p&gt;Per questo, ora, quando nella mia vita costruisco qualcosa come una famiglia,
+come la serenità o come lo sport che mi da sicurezza e calore io lotto per
+evitare che me lo portino via. &lt;/p&gt;
+
+&lt;p&gt;Proprio come qualcuno fece in un freddo natale del 1986.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/la-lunga-strada-che-parte-da-ieri&quot;&gt;La lunga strada che parte da ieri&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on November 19, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[L'italica moda del fare abbrutto]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/litalica-moda-del-fare-abbrutto" />
+  <id>http://thesp0nge.com/blog/litalica-moda-del-fare-abbrutto</id>
+  <published>2013-11-12T08:12:00+01:00</published>
+  <updated>2013-11-12T08:12:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;L’italiano medio è stressato. Forse guarda troppo calcio in TV e fa poco
+all’amore con la propria compagna (o compagno, non importa). L’italiana media
+è stressata. Forse guarda troppo l’ennesimo reality sulla cucina e fa poco
+all’amore con il proprio compagno (o compagna, non importa).&lt;/p&gt;
+
+&lt;p&gt;Morale della favola: c’è in giro veramente troppa gente stressata che non ride,
+che alla macchina sembra che quel sorpasso, arrivare quei 10 secondi prima al
+semaforo siano una questione di vita o di morte. Se per arrivarci stiri uno
+sulle strisce la diventa una questione di vita o di morte, &lt;strong&gt;pirla&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;C’è poi una cosa spiacevole, a parte non fare spesso all’amore che influisce di
+per sé sul mondo, l’italiano medio sta diventando minaccioso su tutto.
+Attraversi la strada, quasi ti stirano e ti mandano a fare in culo. L’autista
+di un autobus occupa le strisce mettendosi in cosa invece di far passare te e
+la tua bimba, tu lo guardi e lui ti manda a fare in culo. Sei fruitore di un
+servizio, basta che protesti non importa se pacatamente e con educazione ma in
+un modo o nell’altro riceverai una risposta sgarbata che suona come un
+vaffanculo anche se molto più &lt;em&gt;polite&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bene, grande segreto: non siete i padrieterni. Forse neanche lui lo è, ma
+lasciamo per un attimo la metafisica alle serate con pane, salame e grappa. 
+E’ inutile che insulti quel pedone che ti ha fatto perdere il verde perché:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ha ragione lui e se lo stiri lo ripaghi nuovo, ti pignoreranno pure le
+mutande finché non ripaghi ogni singolo centesimo&lt;/li&gt;
+  &lt;li&gt;se lo stiri, c’è quella simpatica cosa del carcere, è vero che in questo
+paese ridicolo non va più in galera nessuno, però a te rimane che hai stirato
+uno per un semaforo verde… fai tu&lt;/li&gt;
+  &lt;li&gt;sei un pedone tu stesso e potrai ricevere lo stesso trattamento&lt;/li&gt;
+  &lt;li&gt;se ti apre la portiera e ti cartella di pugni te la sei cercata, ciccio&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ieri in metropolitana c’erano due ragazzine sui 14-15 anni una delle quali si
+bullava che l’ex fidanzato ha spaccato la faccia all’attuale fidanzato,
+condendo poi il racconto con alcune frasi topiche come &lt;em&gt;“eh, cioè mica ci
+dobbiamo sposare… me lo faccio e vediamo come va”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Questa gente, oltre che votare tra un po’, un giorno metterà al mondo figli…
+che begli educatori che saranno, mi viene da dire.&lt;/p&gt;
+
+&lt;h2 id=&quot;piccola-postilla-sul-fare-spesso-allamore&quot;&gt;Piccola postilla sul fare spesso all’amore&lt;/h2&gt;
+
+&lt;p&gt;Se sei impegnato, oltre che ad essere una pratica molto utile per rinvigorire
+il proprio rapporto, ti permette di bruciare le calorie di quel
+cioccolattino… birichino, ti ho visto ieri.&lt;/p&gt;
+
+&lt;p&gt;Se sei single, tirati a lucido, esci e conosci qualcuno. E’ bello ogni tanto
+ricordarsi di essere vivi e vivere è il modo migliore per farlo.&lt;/p&gt;
+
+&lt;h2 id=&quot;introspezione&quot;&gt;Introspezione&lt;/h2&gt;
+
+&lt;p&gt;Io non sono esente dal ticket. Sono veramente molto nervoso in questo periodo.
+Sarà il ginocchio che ogni tanto in qualche movimento mi fa male, sarà che non
+mi sembra di esprimermi al massimo, sarà che sto diventando grande e questo non
+mi va come dicevano i righeira, ma mi sento veramente un cane rabbioso in
+gabbia.&lt;/p&gt;
+
+&lt;p&gt;Arrivo sempre esausto a sera e mi domando se questa sia vita ed in che modo io
+possa migliorare. Non voglio passare da questa terra lasciando di me
+espressioni vacue di disinteresse come purtroppo spesso vedo in giro.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/litalica-moda-del-fare-abbrutto&quot;&gt;L'italica moda del fare abbrutto&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on November 12, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Le decisioni del signor Novembre e compleanni parte 1]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/le-decisioni-del-signor-novembre-e-compleanni-parte-1" />
+  <id>http://thesp0nge.com/blog/le-decisioni-del-signor-novembre-e-compleanni-parte-1</id>
+  <published>2013-11-07T11:15:00+01:00</published>
+  <updated>2013-11-07T11:15:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Novembre decide sempre per me. La sera stessa di lunedì, quando al mattino
+scrivevo
+&lt;a href=&quot;http://thesp0nge.com/blog/castelli-di-ghiaccio-con-crepe-affitansi/&quot;&gt;questo&lt;/a&gt;
+mi sono fatto male in allenamento. Nuovamente al ginocchio già operato. &lt;/p&gt;
+
+&lt;p&gt;Una botta violenta, di quelle che ti lasciano il fondo nero. Pronto soccorso,
+lastra, ortopedico. Niente di rotto per fortuna, ma…&lt;/p&gt;
+
+&lt;h2 id=&quot;ma-quando-cambiare-non--arrendersi&quot;&gt;Ma… quando cambiare non è arrendersi&lt;/h2&gt;
+
+&lt;p&gt;L’ortopedico mi ha chiesto &lt;em&gt;“sa perché il chirurgo dopo l’operazione le ha
+detto di non farsi più vedere?… Perché se lo rompe ancora a 37 anni lo
+aggiusta solo per correre dietro ai figli.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Sai quando ti dicono quelle frasi che ti lasciano un po’ di sasso? Questa volta
+mi è andata bene, ma se la prossima volta si rompe, dopo l’operazione e la
+trafila di otto mesi per tornare a correre, non c’è più il taekwondo ad
+aspettare… solamente semmai la ginnastica dolce con il gruppo anziani
+“Allegra Simpatia” di qualche circolo ricreativo.&lt;/p&gt;
+
+&lt;p&gt;Quindi, se voglio continuare ora che non è rotto e devo solo stare a riposo una
+decina di giorni, posso dedicarmi se voglio a tutto tranne il combattimento.
+Prendere o lasciare. Lasciare non se ne parla… quindi prendo, mio malgrado.&lt;/p&gt;
+
+&lt;p&gt;Chiaramente questo è l’ultimo post della serie Road to Holland… &lt;/p&gt;
+
+&lt;h2 id=&quot;anni-tante-angurie&quot;&gt;4 anni, tante angurie&lt;/h2&gt;
+
+&lt;p&gt;Oggi il mio primogenito compie 4 anni. Oggi lo abbiamo svegliato con tanti
+auguri a te e con una torta fatta in casa. Riflettevo su quanto bene io possa
+essere in questo momento come modello per Daniele. Non lo so… spero un giorno
+possa filtrare i periodi e prendere quello che gli posso dare quando sono
+veramente al top.&lt;/p&gt;
+
+&lt;p&gt;Perché adesso mi sento un po’ giù anche se nn voglio farlo vedere.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/le-decisioni-del-signor-novembre-e-compleanni-parte-1&quot;&gt;Le decisioni del signor Novembre e compleanni parte 1&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on November 07, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Castelli di ghiaccio con crepe affitansi]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/castelli-di-ghiaccio-con-crepe-affitansi" />
+  <id>http://thesp0nge.com/blog/castelli-di-ghiaccio-con-crepe-affitansi</id>
+  <published>2013-11-04T08:09:00+01:00</published>
+  <updated>2013-11-04T08:09:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Ritrovarsi è il primo passo per poter migliorare. Inutile lavorare quando non
+ci sei. Mentalmente intendo. &lt;/p&gt;
+
+&lt;p&gt;Ultimamente mi piace molto il pezzo &lt;em&gt;Castle of glass&lt;/em&gt; dei Linking Park.
+Rappresenta molto del Paolo collezione uomo autunno-inverno 2013. Per far
+fronte ad un problema, perché 24 pungolamenti al giorno compreso festivi sono
+&lt;strong&gt;oggettivamente&lt;/strong&gt; un problema, mi sono coperto di ghiacchio, via via sempre
+più consistente… via via sempre più spesso. Spazio per moglie e figli e pochi
+altri e via via muri di ghiaccio, spessi a proteggere un piccolo mondo
+costruito con le unghie e coi denti.&lt;/p&gt;
+
+&lt;p&gt;Alla lunga, essere coperti da un muro di ghiaccio è deleterio, ti fa venire il
+raffreddore… prendi freddo alla gola… in buona sostanza non sai più chi
+cazzo tu sia, non riesci a pensare ad altro che accumulare ghiaccio per
+puntellare i buchi, portare blocchi quà e là per fare mura ancora più spesso. &lt;/p&gt;
+
+&lt;p&gt;Passi il tuo tempo a difenderti dai demoni dimenticando che l’unico modo per
+vincere è combattere.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-perego-e-linnata-voglia-di-festeggiare&quot;&gt;I Perego e l’innata voglia di festeggiare&lt;/h2&gt;
+
+&lt;p&gt;Mio figlio chiede quando è il suo compleanno con almeno 6 mesi di anticipo. E
+così Natale. Ora che il primo è imminente, giovedì, puntualmente ogni giorno
+domanda &lt;em&gt;Oggi è il mio compleanno?&lt;/em&gt;
+Ieri più di una volta mi ha chiesto &lt;em&gt;Papà quando è il mio compleanno tu mi
+canti tanti auguri?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Messaggio chiaro: papà, io ho bisogno di sentirmi speciale, voglio calore e
+voglio festa (possibilmente qualche macchinina). Regolati tu. &lt;/p&gt;
+
+&lt;p&gt;Per Natale invece ci stiamo attrezzando. Io gli solletico il palato con le
+ricette alle quali mi darà una mano e lui ribatte con albero, addobbi e luci.
+Mia moglie nn ci sopporta più. Siamo un mix esplosivo per queste cose, potremmo
+andare avanti a pianificare per un’intera colazione &lt;em&gt;(e chi ha figli sa che una
+pianificazione con un bambino che arriva ai 10 minuti, ti sfinisce come un
+brainstorm di due ore)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mappe-demoni-e-novembre&quot;&gt;Mappe, demoni e Novembre&lt;/h2&gt;
+
+&lt;p&gt;Io di solito a Novembre ho bisogno di &lt;strong&gt;ampie&lt;/strong&gt; dosi di auto motivazione.
+Musica, dolci, frasi motivazionali. In uno strano gioco del destino, Novembre
+non è mai stato un mese normale. &lt;/p&gt;
+
+&lt;p&gt;Con un passato che mi perseguita, uscire dal proprio confine di ghiaccio per
+assecondare la voglia di un figlio che vuole festa credo sia uno sforzo
+obbligato. Doloroso ma obbligato.&lt;/p&gt;
+
+&lt;p&gt;Ovviamente è uno sforzo per il quale avere la mente sgombra ed in equilibrio è
+vitale. Il mio equilibrio in questo momento è pari ad una crepa in un muro…
+frantumato e la brutta notizia è che non so come recuperarlo. &lt;strong&gt;Non ne ho la
+più pallida idea&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Recuperare l’equilibrio per Daniele, Anna, Francesca e Paolo. Quattro persone
+che si meritano una roccia, al posto di una persona che cerca di far fronte ad
+un passato che non molla, a mille paure e a tensioni che hanno condizionato la
+mia vita ormai da quasi trent’anni.&lt;/p&gt;
+
+&lt;p&gt;Forse dovrei partire da questo. Ho lottato con le unghie e con i denti per
+ricavarmi un piccolo posto nel mondo che potesse chiamarsi normale. Una piccola
+oasi di serenità e di luce dopo troppe tenebre.&lt;/p&gt;
+
+&lt;p&gt;E’ che a volte penso sia troppo da sopportare per un uomo solo. Dopotutto, non
+mi ha morso un ragno radioattivo.&lt;/p&gt;
+
+&lt;h2 id=&quot;road-to-holland&quot;&gt;Road to Holland&lt;/h2&gt;
+
+&lt;p&gt;Il termine della settimana I di preparazione alla gara di Gennaio, ma anche
+agli impegni sportivi che ci saranno in primavera è stato un disastro completo.
+E questa settimana salterò un allenamento tecnico per il compleanno del mio
+cucciolo. &lt;/p&gt;
+
+&lt;p&gt;Il peso è aumentato rispetto a 2 mesi fa a 78.6Kg ma questo non è una cosa che
+mi preoccupa… 6 etti li perdo solo con un po’ di disintossicazione. Mi
+preoccupa il polpaccio destro, quello della ginocchio operato. Oddio… mi
+preoccupa anche il ginocchio, visto che dalla due giorni intensa di domenica e
+lunedì scorso solo oggi ha smesso di farmi male. Quindi ha impiegato una
+settimana per il recupero. &lt;/p&gt;
+
+&lt;p&gt;Ho comprato su &lt;a href=&quot;http://www.amazon.it&quot;&gt;Amazon&lt;/a&gt; il libro Preparazione atletica
+negli sport da combattimento e nelle arti marziali. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; questo link contiene il mio tracking id amazon, quindi se
+comprate questo libro seguendo questo link mi arrivano dei soldini. Doveroso
+disclaimer così scegliete cosa fare liberamente. Nel caso, io ve lo consiglio
+caldamente. &lt;/p&gt;
+
+&lt;p&gt;Il capitolo più utile per chi è atleta più che preparatore è l’ultimo, dove da
+esempi concreti di schede di allenamento integrative alla parte tecnica
+specifica per ciascuno sport, parte tecnica ovviamente non trattata in questo
+libro.&lt;/p&gt;
+
+&lt;p&gt;Secondo me manca un capitolo ad hoc sull’alimentazione nel caso di preparazione
+agonistica ad una gara.&lt;/p&gt;
+
+&lt;iframe src=&quot;http://rcm-na.amazon-adsystem.com/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=armoredcodeco-20&amp;amp;o=1&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=8820357054&quot; style=&quot;width:120px;height:240px;&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Piccola divagazione geek. Venerdì scorso è uscito &lt;a href=&quot;http://www.google.com/nexus/5/&quot;&gt;il Nexus 5&lt;/a&gt; 
+il nuovo telefono Android di Google. Il bimbo che è in me aveva già il dito
+indice sul pulsante “Aggiungi al carrello”, bramante di desiderio al grido di
+&lt;em&gt;Deve essere mio&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Poi mi sono ricordato… gara in olanda… volo e albergo per quattro… e mi
+sono detto &lt;em&gt;Paolo, stai calmo… va tutto bene, tieni giù quel dito. Molla il
+mouse. Tu non lo vuoi il Nexus 5. Tu non lo desideri ardentemente.&lt;/em&gt; &lt;/p&gt;
+
+&lt;p&gt;E così, più calmo, non l’ho ordinato. &lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/RRGSHvlu9Ss?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;L’immagine di copertina è di &lt;a href=&quot;http://www.flickr.com/photos/etolane/&quot;&gt;Etolane&lt;/a&gt; su licenza Creative Commons&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/castelli-di-ghiaccio-con-crepe-affitansi&quot;&gt;Castelli di ghiaccio con crepe affitansi&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on November 04, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[-81 to Go: road to dutch open]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/81-to-go-road-to-dutch-open" />
+  <id>http://thesp0nge.com/blog/81-to-go-road-to-dutch-open</id>
+  <published>2013-10-30T08:45:00+01:00</published>
+  <updated>2013-10-30T08:45:00+01:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Ho un carattere particolare. Mi piace la competizione. Mi piace prepararmi per
+una gara; avere un obiettivo da raggiungere è una cosa che mi aiuta a stare
+concentrato e motivato. 
+Ho anche un’innata propensione a sottovalutarmi, ecco perché in alcune
+situazioni se non tengo la mente sgombra finisco con l’essere il mio primo
+avversario. E di solito in questi casi vinco su me stesso.&lt;/p&gt;
+
+&lt;p&gt;Tra 81 giorni c’è una gara importante. Voglio prepararla bene e andare assieme
+alla mia squadra. Probabilità di successo in qualche specialità? Prossime allo
+zero. La motivazione dietro? E’ un’esperienza da raccontare e soprattutto è un
+esempio che Daniele o Anna possono usare al posto di mille prediche: lavorare
+duro per prepararsi a qualcosa.&lt;/p&gt;
+
+&lt;h2 id=&quot;road-to-holland&quot;&gt;Road to Holland&lt;/h2&gt;
+
+&lt;p&gt;La situazione di partenza è questa. Il mio ginocchio regge, con qualche
+doverosa precisazione. Domenica c’è stato uno stage agonistico di 2 ore e
+mezza: dato tutto. Lunedì sera, un’ora e mezza di allenamento: dato tutto anche
+lì. Martedì mattina faticavo a muoverlo. Il problema credo sia muscolare,
+perché a caldo poi si riprende. Di sicuro soffre anche lui l’arrivo di Novembre
+e di un clima umidiccio e freddo.&lt;/p&gt;
+
+&lt;p&gt;Il peso potrebbe rappresentare un problema. Sono qualche etto sopra i 78Kg,
+quindi dovrei rientrare senza problemi ed evitarmi la categoria dei -85Kg dove
+trovo pezzi di marcantonio alti due metri. La soglia dei -70Kg è
+irraggiungibile, soprattutto con 3 compleanni e Natale alle porte. &lt;/p&gt;
+
+&lt;p&gt;Perché bloggare della mia preparazione? Credo mi aiuti a stare concentrato
+sull’obiettivo. Credo. Se così non fosse, smetterò di parlarne. Tanto non credo
+di fare un post al giorno sull’argomento.&lt;/p&gt;
+
+&lt;h2 id=&quot;tattica&quot;&gt;Tattica&lt;/h2&gt;
+
+&lt;p&gt;Tra la gara di forme e quella di combattimento, pescando attorno allo 0% di
+probabilità di successo di cui parlavamo prima, ho più chance nella prima che
+nella seconda. Storicamente è sempre stato così.&lt;/p&gt;
+
+&lt;p&gt;Il lavoro che devo dare per la gara di forme è lo stesso per l’esame per la
+cintura nera che &lt;em&gt;dovrei&lt;/em&gt; sostenere verso Febbraio. Per la gara di
+combattimento invece devo risolvere da subito un evidente problema di
+staticità.
+E’ come se tanti omini biscottino mi inchiodassero i piedi a terra. &lt;/p&gt;
+
+&lt;p&gt;A livello di obiettivi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;gara di forme: arrivare in semifinale (che equivale ad arrivare a medaglia,
+ma se lo diciamo così fa già più paura)&lt;/li&gt;
+  &lt;li&gt;gara di combattimento: superare il primo turno (che equivale a vincere un
+incontro ufficiale che sarebbe l’obiettivo che mi sono dato quest’anno).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;allenamento-della-settimana-i&quot;&gt;Allenamento della settimana I&lt;/h2&gt;
+
+&lt;p&gt;Questa settimana, complice Halloween, abbiamo lavorato solo lo scorso Lunedì.
+Né ieri, né oggi sono in condizione di fare sforzi con questa gamba. Domani
+voglio lavorare sul potenziamento muscolare con carichi leggeri. &lt;/p&gt;
+
+&lt;p&gt;Poi voglio introdurre almeno una sessione di corsa prima di settimana prossima.&lt;/p&gt;
+
+&lt;h2 id=&quot;fattore-q&quot;&gt;Fattore Q&lt;/h2&gt;
+
+&lt;p&gt;La grande incognita, vale per tutte le cose della vita soprattutto a 37 anni
+quando cerchi di prepararti fisicamente, è la condizione mentale. Allo stato
+attuale, un criceto su un albero con un ruttino sarebbe in grado di farmi
+volare per un paio di metri. Mentalmente sono scarico. Ci sono mille pensieri e
+preoccupazioni che mi sanno non solo affliggendo ma distruggendo dentro.&lt;/p&gt;
+
+&lt;p&gt;Serenità. Serenità non è vivere dentro il mulino bianco con Banderas che fa il
+pane, che balla tutta la notte alla sagra di paese che poi è sempre l’ora per
+un abbraccio. Serenità è trovare il giusto equilibrio, saper bilanciare quello
+che puoi e che non puoi controllare. Ad oggi, quello che non posso controllare
+(ma che devo gestire per forza) è predominante e mi sta portando fuori strada.&lt;/p&gt;
+
+&lt;p&gt;Su questo punto, ad oggi non so che fare… lo mettiamo tra le cose che sono KO
+e basta. Vediamo se qualcosa migliora.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/81-to-go-road-to-dutch-open&quot;&gt;-81 to Go: road to dutch open&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on October 30, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Paolo il simpatico divulgatore informatico]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/paolo-il-simpatico-divulgatore-informatico" />
+  <id>http://thesp0nge.com/blog/paolo-il-simpatico-divulgatore-informatico</id>
+  <published>2013-10-24T06:06:00+02:00</published>
+  <updated>2013-10-24T06:06:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.smau.it/milano13/schedules/io-faccio-lapplication-security-e-tu/&quot;&gt;Ieri ho fatto a SMAU&lt;/a&gt;
+il mio primo talk non tecnico. Ma prima di parlare di questo… facciamo un
+passo indietro: noi &lt;strong&gt;non&lt;/strong&gt; abbiamo una buona cultura nell’organizzare eventi
+ICT.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Le slide le trovate &lt;a href=&quot;https://speakerdeck.com/thesp0nge/io-faccio-application-security-e-tu#&quot;&gt;qui&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ora è possibile giocare alla &lt;a href=&quot;http://scorecard.armoredcode.com&quot;&gt;scorecard&lt;/a&gt; senza un fastidioso bug che impediva il completamento del questionario.&lt;/p&gt;
+
+&lt;h2 id=&quot;logistica&quot;&gt;Logistica&lt;/h2&gt;
+
+&lt;p&gt;A Milano ci sono due poli fieristici, in attesa che rovinino altre zone per
+l’Expo del 2015 dove mostreremo al mondo intero che oltre al calcio, alla
+pizza, alla mafia e al mandolino purtroppo non abbiamo molto altro da offrire
+&lt;em&gt;(perdonate il rant ma se avete visto il declino di Milano negli ultimi 2
+decenni sapete che fa una pessima figura come città in Europa)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.smau.it&quot;&gt;SMAU&lt;/a&gt; è al polo fieristico “vecchio”, quello a Piazzale
+Lotto, quello per intenderci dove &lt;a href=&quot;http://www.atm-mi.it&quot;&gt;ATM&lt;/a&gt; non ti chiede 5€
+anche se sei abbonato solo per arrivare a Rho-Fiera e lucrare un po’.&lt;/p&gt;
+
+&lt;p&gt;Piazzale Lotto è in pesante ristrutturazione. Segui le indicazioni che ti sono
+state date dalla segreteria organizzativa ed esci sull’uscita che da su un
+viale che &lt;strong&gt;non&lt;/strong&gt; va verso la fiera. Fine. Queste sono le indicazioni per te
+che devi andare a parlare.&lt;/p&gt;
+
+&lt;p&gt;Amen, tanto piove poco… chiedi un po’ in giro, ti orienti ed arrivi a SMAU…
+il gotha dell’ICT Italiano… la fiera del… la fiera del… ma prima parliamo
+dell’accoglienza.&lt;/p&gt;
+
+&lt;h2 id=&quot;accoglienza&quot;&gt;Accoglienza&lt;/h2&gt;
+
+&lt;p&gt;P: &lt;em&gt;“Buongiorno sono un relatore”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;GAR (Gnocca alla reception - si perché noi Italiani, che il machismo ce
+l’abbiamo nel DNA, gli eventi tecnologici li dobbiamo riempire di figa,
+altrimenti non interessano a nessuno): &lt;em&gt;“Buongiorno, ecco il suo pass”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok… quindi chiunque si presenti al desk, nella parte dei relatori, può provare a
+staccare un pass relatore… almeno a me non han chiesto né come mi chiamavo,
+né altre informazioni, solo il “pass relatore”, inviato come attachment ad una
+mail che può essere banalmente stampato in mille mila copie non essendoci su
+nessun riferimento. &lt;strong&gt;Nessuno&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per il resto… non mi aspettavo il kit di benvenuto… né una maglietta… né
+un buono caffé, ma almeno che ne so l’elenco iscritti al mio talk?
+L’indicazione di dove fosse la mia &lt;em&gt;arena Intel (20 posti… non la chiami
+Arena)&lt;/em&gt; C’era un’agenda che secondo me è stata preparata da un informatico
+perché, vi giuro che solo dopo un quarto d’ora e la pipì ho capito quali
+fossero i talk delle 15.00. &lt;/p&gt;
+
+&lt;h2 id=&quot;le-parole-dordine-dellict-italiano-2013-cloud-e-startup&quot;&gt;Le parole d’ordine dell’ICT Italiano 2013? Cloud e Startup&lt;/h2&gt;
+
+&lt;p&gt;Mi sono fatto un giro. C’è la crisi… bla bla bla. Non ci sono soldi… bla
+bla bla. Mi ha scioccato tuttavia non vedere i grandi vendor SMAU: questo rende
+l’evento più inutile di quanto già non sia se uno vuole andare a fare 10
+minuti di business. &lt;/p&gt;
+
+&lt;p&gt;Ho visto un banchetto di &lt;a href=&quot;http://www.cisco.com&quot;&gt;cisco&lt;/a&gt; e un tavolino per
+&lt;a href=&quot;http://www.ibm.com&quot;&gt;ibm&lt;/a&gt;. Oracle? Microsoft? Apple? Google? Le filiali
+italiane non si curano di quello che viene definito l’evento più importante per
+l’ICT Italiano? Crisi o non crisi questo è un problema grosso.&lt;/p&gt;
+
+&lt;p&gt;I vendor di security poi? Missing in action. Da quello che ho visto ieri, la
+sicurezza nell’ICT italiano &lt;strong&gt;non-esiste&lt;/strong&gt;. Come il cucchiaio di Matrix.&lt;/p&gt;
+
+&lt;p&gt;Veniamo alle parole d’ordine che sono sulla bocca di tutti ed in mille
+banchetti e stand. La prima: il cloud. &lt;/p&gt;
+
+&lt;p&gt;Chi mi sa dare una definizione di cloud? &lt;em&gt;(quando incontro ancora gente che di
+fronte alla definizione di API mi domanda “ma… quella cosa che fa l’XML?”)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Tutto è nel cloud ma, siccome noi siamo &lt;strong&gt;veramente&lt;/strong&gt; delle bestie, dobbiamo
+introdurre la nozione di &lt;em&gt;cloud italiano&lt;/em&gt; vantandoci di avere i datacenter nel
+cloud ma… in Italia. In tanto tracotante nazionalismo, mi viene quindi da
+domandarmi dove cazzo stia l’innovazione del cloud italiano rispetto ai servizi
+di hosting fin qui offerti. Non mi rispondo, rido perché mi dicono che il loro
+cloud è protetto dall’antivirus e passo oltre.&lt;/p&gt;
+
+&lt;p&gt;Seconda parola d’ordine. Startup. Nel mondo sono ovviamente avanti, noi stiamo
+iniziando ora. Premetto che sono assolutamente a favore dell’imprenditoria e,
+molto meglio lanciare una propria azienda, un proprio servizio che diventare
+l’ennesimo consulente in giacca e cravatta che si butta via tra Excel e
+Powerpoint cercando di dimenticare il perché si è laureato in campo
+scientifico. Ma sembra che in Italia, per ora, startup voglia soprattutto dire
+&lt;em&gt;social something&lt;/em&gt;. La maggior parte dei servizi che ho visto erano social
+network declinati in qualche salsa: amanti del vino, amanti della cucina,
+amanti della natura… Ok, abbiamo visto tutti il film su Facebook, potete ora
+fare qualcosa di &lt;strong&gt;realmente&lt;/strong&gt; innovativo? Altrimenti voi i vari round A di
+investimenti, non li prendete con i prodotti copycat.&lt;/p&gt;
+
+&lt;p&gt;C’erano poi cose veramente fiche come startup che forniscono assistenza
+personale ad anziani attraverso dispositivi basati su
+&lt;a href=&quot;http://www.arduino.cc&quot;&gt;arduino&lt;/a&gt;. Purtroppo non ricordo il nome della startup,
+ma questa è la vera innovazione. Quando ci faranno un film, magari l’italiano
+medio ci si butterà. Per ora ringraziamo i visionari.&lt;/p&gt;
+
+&lt;h2 id=&quot;il-mio-primo-talk-divulgativo&quot;&gt;Il mio primo talk divulgativo&lt;/h2&gt;
+
+&lt;p&gt;Arrivano le 16 e parte il mio talk all’Arena Intel. 20 posti a sedere. 5
+occupati. Cazzo, per una settimana mi martellano di mail che la mia
+presentazione ha il tutto esaurito e l’arena è deserta. &lt;/p&gt;
+
+&lt;p&gt;Vabbuò parto, le persone presenti sembrano qui perché interessate quindi diamo
+a loro un po’ di show. In realtà poi avrò una bella platea numerosa e anche
+interessata. Non si è addormentato nessuno: è un grande successo per Paolo.&lt;/p&gt;
+
+&lt;p&gt;Il talk è divertente. E’ una &lt;a href=&quot;http://scorecard.armoredcode.com&quot;&gt;scorecard&lt;/a&gt; dove
+sono presentati 4 temi che introducono l’application security in azienda: i
+tool, il team, il workflow e l’awareness. Per ogni tema ho introdotto 5 domande
+e ciascuna domanda ha un punteggio.&lt;/p&gt;
+
+&lt;p&gt;Hanno giocato &lt;strong&gt;tutti&lt;/strong&gt;. Fantastico, questo non me lo aspettavo.
+Purtroppo l’evento non è stato filmato. Purtroppo lo stesso talk non è stato
+accettato da &lt;a href=&quot;http://www.bettersoftware.it/&quot;&gt;bettersoftware&lt;/a&gt;. Purtroppo hanno
+organizzato il &lt;a href=&quot;http://milano.codemotionworld.com/&quot;&gt;codemotion a Milano&lt;/a&gt; senza
+un call for paper dove l’avrei presentato. 
+Amen. &lt;/p&gt;
+
+&lt;p&gt;Altro rant… cari organizzatori di bettersoftware, due parole anche solo per
+cortesia per dire che un talk non è stato accettato l’avreste potuto fare. Si
+dovevate investire del tempo, lo stesso che ho investito io (e altri) nel
+rispondere al CFP.&lt;/p&gt;
+
+&lt;p&gt;Cari organizzatori del Codemotion, se fate una conf solo ad inviti senza un
+call for paper, va bene ma se qualcuno vi scrive interessato a partecipare non
+mandate il vostro community manager a vedere il &lt;a href=&quot;http://it.linkedin.com/in/thesp0nge&quot;&gt;mio
+linkedin&lt;/a&gt; senza rispondere alla mail. E’
+un po’ come rispondere &lt;em&gt;“ah, tu volevi venire a parlare per noi? non
+all’altezza”&lt;/em&gt;. Il che può essere vero ma devi avere l’educazione per dirmelo.&lt;/p&gt;
+
+&lt;h2 id=&quot;cosa-ho-imparato&quot;&gt;Cosa ho imparato?&lt;/h2&gt;
+
+&lt;p&gt;Ho imparato, anche vedendo i talk di &lt;a href=&quot;http://gogaruco.com/&quot;&gt;GoGaruCo&lt;/a&gt;,
+&lt;a href=&quot;http://www.baruco.org/&quot;&gt;Baruco&lt;/a&gt; o ripensando all’esperienza fantastica di
+&lt;a href=&quot;http://www.railsberry.com&quot;&gt;Railsberry&lt;/a&gt; che quando organizziamo una conferenza
+ICT:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ci prendiamo troppo sul serio&lt;/li&gt;
+  &lt;li&gt;forniamo un template per le slide inutilizzabile che nessuno usa&lt;/li&gt;
+  &lt;li&gt;non pensiamo al merchandise (magliette dell’evento, sticker, gadget, …)&lt;/li&gt;
+  &lt;li&gt;spesso gli speaker prendono ferie per venire a parlare ad un evento. Non dico
+i ponti d’oro e la stanza pagata come all’estero &lt;em&gt;(dove AFAIK la crisi
+dovrebbe essere anche lì)_ma almeno il buono caffé o il nome stampato sul badge
+che dice _“ok, so che tu ti sei sbattuto per il mio evento, grazie”&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dovremmo quindi tutti ridere un po’ di più. Fare ICT con entusiasmo, buttando a
+mare Excel e Gantt di progetto assurdi per creare veramente del buon software.
+Dovremmo cercare veramente l’innovazione. Io dal punto mio rosico nel non
+essere stato accettato né a &lt;a href=&quot;http://www.bettersoftware.it/&quot;&gt;bettersoftware&lt;/a&gt;, né
+al &lt;a href=&quot;http://milano.codemotionworld.com/&quot;&gt;codemotion a Milano&lt;/a&gt;, perché sono due
+eventi che secondo me si avvicinano molto alle conferenze software europee,
+nello spirito dico.&lt;/p&gt;
+
+&lt;p&gt;Di sicuro in Italia, a parte &lt;a href=&quot;https://www.owasp.org/index.php/Italy&quot;&gt;l’Owasp Day&lt;/a&gt; 
+e il &lt;a href=&quot;http://rubyday.it/&quot;&gt;Ruby Day&lt;/a&gt; e i due sopra citati, di eventi dove mi
+interesserà andare nel 2014 &lt;a href=&quot;http://www.smau.it&quot;&gt;SMAU&lt;/a&gt; non interesserà più.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;nota per la platea di ieri&lt;/em&gt;: Grazie, siete stati veramente fantastici. Mi sono
+piaciute le domande finali e l’attenzione durante il gioco e mi è piaciuto
+veramente un sacco vedere che attivamente vi segnavate i punteggi. Spero
+facciate della buona application security in azienda e se avete problemi,
+&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#112;&amp;#097;&amp;#111;&amp;#108;&amp;#111;&amp;#064;&amp;#097;&amp;#114;&amp;#109;&amp;#111;&amp;#114;&amp;#101;&amp;#100;&amp;#099;&amp;#111;&amp;#100;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;scrivetemi una mail&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/paolo-il-simpatico-divulgatore-informatico&quot;&gt;Paolo il simpatico divulgatore informatico&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on October 24, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Hai perso il treno?]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/hai-perso-il-treno" />
+  <id>http://thesp0nge.com/blog/hai-perso-il-treno</id>
+  <published>2013-10-21T08:30:00+02:00</published>
+  <updated>2013-10-21T08:30:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;h2 id=&quot;autunno-e-punti-di-singolarit&quot;&gt;Autunno e punti di singolarità&lt;/h2&gt;
+
+&lt;p&gt;Sul treno l’italico medio si sta vantando di iniziare oggi il torneo di
+calcietto metre il collega, IT anche lui e tronfiamente MEDIO anche lui, gli
+suggerisce di giocare alla pleistescion, perché si sa…&lt;/p&gt;
+
+&lt;p&gt;“Si sa”, cosa poi alla fine veramente in pochi lo sanno.&lt;/p&gt;
+
+&lt;p&gt;Ieri Carrizo sbaglia la posizione e si fa infilare all’ultimo minuto. Torino -
+Inter 3-3. Sbagliare la posizione è un attimo, come iniziare il torneo di
+calcietto.&lt;/p&gt;
+
+&lt;p&gt;L’autunno ti frega con il suo cielo plumbeo e la nebbia. Se non fosse che non
+vedi niente, la nebbia non è tanto male quando devi stare a casa tua
+ranicchiato al caldo. La nebbia offusca le cose, ti fa perdere le certezze e ti
+da nuove prospettive.&lt;/p&gt;
+
+&lt;p&gt;Nella nebbia non puoi sbagliare posizione e ci sono veramente poche cose che tu
+possa sapere quando non vedi ad un palmo dal tuo naso. Nella nebbia puoi
+lasciare un fiume di pensieri libero di andare dove vuole, che poi alla fine in
+realtà i pensieri sanno benissimo dove devono andare a perdersi.&lt;/p&gt;
+
+&lt;h2 id=&quot;scacchi-conquista-il-centro-della-scacchiera&quot;&gt;Scacchi. Conquista il centro della scacchiera&lt;/h2&gt;
+
+&lt;p&gt;Ho trovato un’interessante analogia tra lo sport che faccio e gli scacchi.
+Sembra che mantenere il centro del proprio quadrato di gioco, possa dare un
+vantaggio competitivo notevole.&lt;/p&gt;
+
+&lt;p&gt;Sei in mezzo alla stessa distanza dagli angoli, dai bordi, dall’uscire dal
+quadrato, dal perdere i tuoi riferimenti: sei in equilibrio.&lt;/p&gt;
+
+&lt;p&gt;Stare in centro ed essere in equilibrio è una figata assurda. Pochi ci riescono
+a mantenere questo stato a lungo, sinceramente io ho un record di qualche mese,
+forse un anno in un equilibrio perfetto.&lt;/p&gt;
+
+&lt;p&gt;Poi ti stanchi, la vita e gli impegni ti fanno essere meno concentrato e
+vacilli. Provi a riprendere l’equilibrio a tornare in quello stato in cui le
+forze su di te hanno risultante nulla ma arriva la prima stronza con un
+telefono e cadi una volta, poi due, poi tre e ti ritrovi che sono più le volte
+che cerchi di tirarti nuovamente in piedi che di quelle che stai al centro, in
+equilibrio, perso. Appunto.&lt;/p&gt;
+
+&lt;h2 id=&quot;treni-persi-occasioni-mancate&quot;&gt;Treni persi, occasioni mancate&lt;/h2&gt;
+
+&lt;p&gt;Perdere l’equilibrio è come perdere un treno. Le porte si chiudono e devi
+trovare una strada alternativa. Perdi un treno ed in quel momento non sai se
+sarà un viaggio più facile, più avventuroso. Non sai se conoscerai nuova gente,
+magari così diversa dai tuoi compagni di viaggio abituale. Non sai se arriverai
+comunque in tempo, se sarai in ritardo e se questo eventuale ritardo non
+innescherà in una sorta di reazione a catena, altri cambiamenti nella tua vita
+che ti porteranno sempre più lontano dal tuo equilibrio.&lt;/p&gt;
+
+&lt;p&gt;Certo, potrebbe accadere che in realtà perdere quel treno ti porti proprio a
+ritrovarlo il tuo equilibrio. &lt;/p&gt;
+
+&lt;p&gt;Succede raramente ma può succedere.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;L’immagine è di &lt;a href=&quot;http://www.flickr.com/photos/46461913@N00/3522144033/in/photolist-6neUHg&quot;&gt;Nainerouge&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/hai-perso-il-treno&quot;&gt;Hai perso il treno?&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on October 21, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Zucche, ognissanti e polemica in salsa antani]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/zucche-ognissanti-e-polemica-in-salsa-antani" />
+  <id>http://thesp0nge.com/blog/zucche-ognissanti-e-polemica-in-salsa-antani</id>
+  <published>2013-10-18T07:39:00+02:00</published>
+  <updated>2013-10-18T07:39:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;h2 id=&quot;un-paese-senza-avvenire&quot;&gt;Un paese senza Avvenire&lt;/h2&gt;
+
+&lt;p&gt;Della polemica su Halloween, le sue origin ed i suoi intrecci con il satanismo,
+l’esoterismo poteva l’italietta del 2013 farne a meno?&lt;/p&gt;
+
+&lt;p&gt;Assolutamente no. &lt;/p&gt;
+
+&lt;p&gt;Non sono titolato per parlare con certezza delle origini della festa, di come
+si intrecci nella storia celtica e dell’europa medioevale, Italia compresa.
+Dalla leggenda leggiamo di doni offerti alla figura del maligno per
+&lt;em&gt;esorcizzarne&lt;/em&gt; la presenza, per invitarlo ad andarsene nei giorni in cui si
+saluta l’estate. &lt;/p&gt;
+
+&lt;p&gt;Poi è tutta una guerra per dire “Ehi la festa è mia” oppure “Al bando le
+festività americane”. Sì perché l’italiano medio non riesce a sforzare il suo
+neurone per andare oltre a quello che ha visto nei film: “se nei film americani
+vedo che festeggiano halloween, allora halloween è una festa americana”.
+Festeggiano anche il Natale, ma spero nn se ne accorga nessuno.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.avvenire.it/Cronaca/Pagine/riecco-halloween-festa-alto-rischio.aspx&quot;&gt;Un articolo su Avvenire&lt;/a&gt;,
+intervista a quello che mi sembra comunque un sacerdote intelligente visto il
+ruolo che ricopre, naviga nel connubbio “Ti vesti da scheletro = Sei un
+satanista” il che è cristianamente parlando, una cazzata.&lt;/p&gt;
+
+&lt;p&gt;A parte la tradizione celtica esserci ben prima dalla festa di ognissanti,
+imposta dalla chiesa per dare il suo marchio un po’ e ricordare a tutti che il
+monopolio su feste e party ce l’ha solo lei, ma se volete vedere veramente il
+male, quello vero… esci di strada.&lt;/p&gt;
+
+&lt;p&gt;Dimentichiamoci per un attimo delle guerre, che già basterebbero. Gente che
+accoltella fidanzate o ex. Gente che si prende a randellate per una partita di
+calcio. Gente che ti falcia mezzo sulle strisce poi caccia fuori la testa e ti
+manda a fare in culo. &lt;/p&gt;
+
+&lt;p&gt;Ebbasta con questa polemica su Halloween, zucche, scheletri e demoni. Il
+demonio ognuno se lo porta dentro, se gli lascia il comando o se lo fa stare in
+un cantuccio è grazie a quella figata del libero arbitrio che il primo CEO
+della Chiesa aveva introdotto. &lt;/p&gt;
+
+&lt;p&gt;Poi si sà arriva il primo giornalista che vuole il titolone e allora…
+Halloween diventa una festa dalle origini a stelle e strisce, chi la festeggia
+un profanatore di cimiteri ed un satanista e tutti gli altri bravissime et
+reverendissime persone.&lt;/p&gt;
+
+&lt;p&gt;Beati quanti ci credono.&lt;/p&gt;
+
+&lt;p&gt;Io per il mondo mi auguro veramente che la gente smetta di fermarsi alla prima
+cosa che gli dicono ma cerchi di capire con la propria testa. Mi auguro sempre
+molte cose… purtoppo poche volte si avverano tuttavia.&lt;/p&gt;
+
+&lt;h2 id=&quot;si-ma-io-lo-festeggio&quot;&gt;Si ma io lo festeggio?&lt;/h2&gt;
+
+&lt;p&gt;Io amo i Peanuts e da sempre sono affascinato dalla storia di Linus e del
+grande cocomero.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/linus-398x340-d878f7.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Non festeggio Halloween perché non l’ho mai fatto. Se mi vengono a citofonare
+per dolcetto o scherzetto darò qualche caramella ma se penso ad Halloween,
+allora giro la manopola del volume a 12.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/ZUzpf3mMsxA?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/zucche-ognissanti-e-polemica-in-salsa-antani&quot;&gt;Zucche, ognissanti e polemica in salsa antani&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on October 18, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Muffin fiocco di neve al caffè]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/muffin-fiocco-di-neve-al-caffe" />
+  <id>http://thesp0nge.com/blog/muffin-fiocco-di-neve-al-caffe</id>
+  <published>2013-10-07T07:54:00+02:00</published>
+  <updated>2013-10-07T07:54:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Oggi ci prepariamo per un classico delle ricette dei weekend in casa sp0nge: i
+muffin.
+Più o meno 10 anni fa, Koan condivise le sue ricette per i muffin con i quali
+deliziava la blogsfera allora presente su
+&lt;a href=&quot;http://www.livejournal.com&quot;&gt;livejournal&lt;/a&gt;. Inutile dire che non ho mai seguito
+la ricetta originale, anche se mai mi sono spinto così lontano nella
+sperimentazione come ieri.&lt;/p&gt;
+
+&lt;p&gt;Un difetto dei miei muffin, rispetto a quelli che trovo al bar al lavoro, è che
+sono stopposi. L’impasto non risulta soffice come se steste mangiando delle
+nuvolette di cioccolato. Le volete le nuvolette di cioccolato? Allora provate
+questa variante.&lt;/p&gt;
+
+&lt;h2 id=&quot;cosa-serve&quot;&gt;Cosa serve&lt;/h2&gt;
+
+&lt;p&gt;Per preparare 12 muffin fiocco di neve al caffè, vi serve:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;280g di farina 00&lt;/li&gt;
+  &lt;li&gt;20g di cacao amaro&lt;/li&gt;
+  &lt;li&gt;160g di zucchero&lt;/li&gt;
+  &lt;li&gt;mezzo sacchetto di lievito per dolci&lt;/li&gt;
+  &lt;li&gt;1 cucchiaino di sale&lt;/li&gt;
+  &lt;li&gt;80cl di olio di oliva&lt;/li&gt;
+  &lt;li&gt;120cl di latte&lt;/li&gt;
+  &lt;li&gt;2 uova + procedimento segreto A&lt;/li&gt;
+  &lt;li&gt;1 tazzina di ingrediente segreto B&lt;/li&gt;
+  &lt;li&gt;1 tavoletta di cioccolato fondente da 100g&lt;/li&gt;
+  &lt;li&gt;un bambino di quasi 4 anni che mescoli e vi dica che siete bravi&lt;/li&gt;
+  &lt;li&gt;una bambina di 10 mesi che ha imparato a gattonare e vi ignora per dedicarsi
+ad un pinguino con le ruote&lt;/li&gt;
+  &lt;li&gt;stampi in silicone per muffin. Se non li avete, correte a prenderli: sono
+fondamentali.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il procedimento segreto A è quello di separare i tuorli delle uova dagli albumi
+e montare questi ultimi a neve in modo da ottenere una soffice nuvoletta
+insapore. Attenzione: gli album vanno montati &lt;strong&gt;solo alla fine del
+procedimento&lt;/strong&gt; o come direbbe il mio aiutante, dell’impasto.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ingredienti-muffin-400x400-87a9e8.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;L’ingrediente segreto B è il caffè. Noi a casa usiamo una macchina per il caffé
+all’americana. Fanculo la tradizionale Moka, a me piace il chiccherone di caffé
+caldo e non ho paura di dire che:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;non è una brodaglia&lt;/li&gt;
+  &lt;li&gt;ha più caffeina della moka&lt;/li&gt;
+  &lt;li&gt;ha un gusto molto meno forte e deciso della moka chiaramente ma mi scalda
+molto di più. Se venite a casa mia una moka per voi comunque ce l’ho…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Di solito dalla mattina resta nel bricco sempre un po’ di caffè da scaldare
+all’uopo. In questa ricetta lo potete usare anche freddo come ho fatto io. In
+alternativa, fatevi una moka e buttate una tazzina nell’impasto quando
+indicato.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/caffe-muffin-400x400-e0f3ba.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;procedimento&quot;&gt;Procedimento&lt;/h2&gt;
+
+&lt;p&gt;Prima di tutto prendete la tavoletta di cioccolato e rompetela con un coltello
+in quadrotti irregolari di circa mezzo centimetro per lato.
+Questi finiranno nell’impasto alla fine, appena dopo gli albumi e poi saranno
+la parte &lt;em&gt;misciolgoinbocca&lt;/em&gt; dei nostri muffin. Non importa la marca (io ho
+usato quello dell’slunga), ma quello che conta è che sia fondente.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/cioccolato-cubetti-muffin-400x400-65c9b9.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A questo punto accendete il forno e lo scaldate a 180 gradi.&lt;/p&gt;
+
+&lt;p&gt;Prendete una bella terrina e versateci dentro la farina, lo zucchero, il cacao
+in polvere, il cucchiano di sale ed il lievito. A questo punto dite al vostro
+aiutate di 4 anni di mescolare.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/mescolare-impasto-muffin-400x400-19a687.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mentre il vostro aiutante mescola tutto assieme, fino a far diventare il tutto
+un complesso farinoso tendente al marroncino, voi prendete una scodella e
+metteteci dentro le uova, l’olio, il caffé ed il latte. Rompete i tuorli con un
+cucchiaio e sbattete le uova.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/versare-olio-muffin-400x400-b45e79.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Non serve lavorarci sopra troppo. Date un minutino di sbattutina, tanto per
+amalgamare l’uovo e conservate le forze per montare gli albumi.
+Versate la scodella con il liquidume dentro la terrina con la farinosità e dite
+al vostro aiutante di continuare a mescolare. L’idea è quella di ottenere un
+composto omogeneo della consistenza di una crema. Se prendendone un po’ con il
+cucchiaio e lasciandolo cadere offre una certa resistenza e fa una specie di
+filo dal cucchiaio fino alla terrina modello appunto crema che cade da un
+cucchiaio allora avete raggiunto la giusta consistenza.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/impasto-cremoso-muffin-400x400-408168.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Armatevi di pazienza e bicipiti e montate quei due albumi come se non ci fosse
+un domani. L’aggiunta di questo dovrebbe dare spumosità ai vostri dolcetti una
+volta tolti dal forno e si spera per qualche giorno.&lt;/p&gt;
+
+&lt;p&gt;Ottenuta la nuvoletta di albumi, versatela nella terrina insieme ai quadrotti
+di cioccolato spezzettati all’inizio e date un po’ di mescolate per rendere
+tutto omogeneo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/stampi-muffin-400x400-21068e.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ora è giunto il momento di riempire gli stampi in silicone. Con queste dosi vi
+vengono 12 muffin. Con un cucchiaio distribuite la crema ottenuta in modo da
+riempire ciascun stampo per 3/4 e poi spedite i ragazzacci in forno, già caldo,
+per 15/20 minuti.&lt;/p&gt;
+
+&lt;h2 id=&quot;test-di-accettazione&quot;&gt;Test di accettazione&lt;/h2&gt;
+
+&lt;p&gt;I vostri muffin sono pronti se, infilzandoli con uno stuzzicadenti, questo
+resta asciutto… ovvero non tirate su impasto insieme al legnetto.&lt;/p&gt;
+
+&lt;p&gt;I vostri muffin si presentano non stereoidei come quelli di Starbuck’s, ma
+abbastanza gustosi per compensare mail idiote sul tema “non vedo perché
+dobbiate fare test di security” (su apparati che da 8 anni hanno exploit
+pubblici rilasciati periodicamente n.d.s).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/muffin-fiocco-di-neve-caffe-400x400-878888.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Colonna sonora consigliata per la preparazione: The Boxer - Simon &amp;amp; Garfunkel.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;In the clearing stands a boxer &lt;br /&gt;And a fighter by his trade &lt;br /&gt;And he carries the reminders &lt;br /&gt;Of ev&#39;ry glove that layed him down &lt;br /&gt;Or cut him till he cried out &lt;br /&gt;In his anger and his shame &lt;br /&gt;&quot;I am leaving, I am leaving&quot; &lt;br /&gt;But the fighter still remains.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/ky57Jo3-BaU?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/muffin-fiocco-di-neve-al-caffe&quot;&gt;Muffin fiocco di neve al caffè&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on October 07, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Hey, hai visto il sottomarino a Milano?]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/hey-hai-visto-il-sottomarino-a-milano" />
+  <id>http://thesp0nge.com/blog/hey-hai-visto-il-sottomarino-a-milano</id>
+  <published>2013-10-01T08:08:00+02:00</published>
+  <updated>2013-10-01T08:08:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Oggi &lt;a href=&quot;http://www.metronews.it/&quot;&gt;&lt;em&gt;metro&lt;/em&gt;&lt;/a&gt;, uno dei quotidiani gratuiti distribuiti in metropolitana, ha una
+copertina pubblicitaria che, parlando dei nabigli milanesi, mette in prima
+pagina una notizia fake. Un sottomarino ieri si sarebbe perso e sarebbe emerso
+in centro a Milano.&lt;/p&gt;
+
+&lt;p&gt;Ora, per chi non è di Milano, per delle &lt;strong&gt;scellerate&lt;/strong&gt; opere pubbliche decise
+dai politici nel corso degli anni, le vie d’acqua milanesi, una volta
+navigabili, ora sono strade dove possiamo andare ad inquinare un po’.&lt;/p&gt;
+
+&lt;p&gt;Sarebbe veramente bello se anche noi potessimo avere i nostri navigli
+navigabili… sia per la loro utilità, che anche per turismo. Perché vivere in
+una città bella da vedere non dovrebbe essere un lusso che solo l’estero si può
+permettere.&lt;/p&gt;
+
+&lt;p&gt;Dicevamo della notizia fake… chiaramente nessuno sano di mente pensa che in
+piazza duomo emerga un sottomarino. Nessuno tranne il paffuto occhialuto che
+con aria assente pontifica con la sua bella che lui, &lt;em&gt;effettivamente&lt;/em&gt; ieri ha
+sentito da un suo amico che ha visto il sommergibile, eh pensa tu cosa è
+successo, certo solo in Italia, &lt;em&gt;bla bla bla&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Poi uno si domanda come fanno ad esistere milioni di persone che votano PDL
+credendo nella figura del Grande Statista perseguitato dalla magistratura
+corrotta e politicizzata e sì, era la nipote di Mubarack e stavamo facendo solo
+del burlesque.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/hey-hai-visto-il-sottomarino-a-milano&quot;&gt;Hey, hai visto il sottomarino a Milano?&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on October 01, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Cuciniamo i pancake]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/cuciniamo-i-pancake" />
+  <id>http://thesp0nge.com/blog/cuciniamo-i-pancake</id>
+  <published>2013-09-30T07:53:00+02:00</published>
+  <updated>2013-09-30T07:53:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Cosa c’è di meglio da fare in un pomeriggio uggioso di fine settembre?
+Bravissimi, cucinare i pancake.
+I pancake sono una crepe in formato u.s.a. da consumarsi aperta possibilmente
+con litri di sciroppo d’acero sopra e facendo finta di essere sulla Quinta
+Strada a NYC.&lt;/p&gt;
+
+&lt;h2 id=&quot;cosa-serve&quot;&gt;Cosa serve&lt;/h2&gt;
+
+&lt;p&gt;Per cucinare i pancake vi serve:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;la ricetta (altrimenti nn andate da nessuna parte)&lt;/li&gt;
+  &lt;li&gt;l’ingrediente segreto A&lt;/li&gt;
+  &lt;li&gt;l’ingrediente segreto B&lt;/li&gt;
+  &lt;li&gt;un bambino di quasi 4 anni che mescoli e vi dica che siete bravi&lt;/li&gt;
+  &lt;li&gt;una bambina di 10 mesi che pianga e vi guardi torva&lt;/li&gt;
+  &lt;li&gt;200g di farina 00&lt;/li&gt;
+  &lt;li&gt;250ml di latte&lt;/li&gt;
+  &lt;li&gt;2 uova&lt;/li&gt;
+  &lt;li&gt;2 cucchiai di zucchero&lt;/li&gt;
+  &lt;li&gt;2 pizzichi di sale&lt;/li&gt;
+  &lt;li&gt;2 cucchia&lt;strong&gt;ini&lt;/strong&gt; di lievito per dolci&lt;/li&gt;
+  &lt;li&gt;1 cucchiaino di cannella&lt;/li&gt;
+  &lt;li&gt;1 cucchiaino d’olio extravergine di oliva&lt;/li&gt;
+  &lt;li&gt;burro q.b.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La cannella è l’ingrediente segreto A. L’olio è l’ingrediente segreto B. Nella
+ricetta originale, presa dal libro della reverendissima Benedetta (posso
+escludere il cognome, se non sapete di quale Benedetta io stia parlando siete
+fuori, non siete dei cuochi al Top), non ci sono quindi anche senza viene bene
+lo stesso.&lt;/p&gt;
+
+&lt;p&gt;La cannella è l’ingrediente del quale potete aumentare la dose a piacimento…
+sull’olio io starei al massimo sui 2 cucchiaini, son già belli unti di loro
+alla fine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ingredienti-pancake-400x400-95e9f0.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;procedimento&quot;&gt;Procedimento&lt;/h2&gt;
+
+&lt;p&gt;Prendete una bella terrina e ci versate dentro la farina, il livito, lo
+zucchero ed il sale. Dite a questo punto al vostro aiuto cuoco di 4 anni di
+iniziare a mescolare tra l’oro gli ingredienti. In realtà non serve a nulla ma
+a lui piace e gli sembrerà di essere Buddy Valastro Jr. quindi… perché non
+accontentarlo?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/mescolare-pancake-400x400-9aa1a6.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In una scodella più piccola versate il latte, il cucchiaio di cannella ed i 2
+tuorli d’uovo. &lt;strong&gt;Attenzione&lt;/strong&gt; l’albume vi serve, conservatelo.
+Mescolate il latte, le uova e la cannella… in questo caso serve veramente che
+voi li sbatacchiate un po’ in modo da rompere i tuorli ed amalgamare la
+cannella rendendo il suo gusto omogeneo &lt;em&gt;(questo è il punto della ricetta dove
+l’autore scrive qualcosa che non ha alcun senso, ma tanto voi avete capito lo
+stesso ed io dovevo usare delle parole ad effetto)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/impasto-pancake-400x400-a39e31.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Versate il contenuto della scodella in quello della terrina e dite al vostro
+aiutante di continuare a mescolare. Adesso si che serve, deve diventare un
+composto uniforme, denso e senza grumi. Se lo vedete troppo liquido aggiungete
+un po’ di farina e un po’ di lievito (max 1 cucchiaino).&lt;/p&gt;
+
+&lt;p&gt;Intanto voi montate a neve gli albumi dell’uovo e fate assaggiare il risultato
+al vostro aiutante che di solito si rifiuta di mangiare il bianco dell’uovo.
+Così si convincerà che è commestibile.&lt;/p&gt;
+
+&lt;p&gt;Aggiungete i bianchi montati a neve al vostro composto e mescolate ancora un
+po’ fino a che non avete amalgamato il tutto.&lt;/p&gt;
+
+&lt;p&gt;Fatto? &lt;em&gt;bbbbravi&lt;/em&gt;. A questo punto è ora che il vostro aiutante si allontani
+perché dovete andare ai fornelli.&lt;/p&gt;
+
+&lt;p&gt;Fiamma vivace e padella anti aderente, meglio se di piccole dimensioni.
+Prendete un ricciolo di burro ed ungete la padella dopo &lt;strong&gt;ogni&lt;/strong&gt; pancake; se lo
+fate solo dopo il primo, già il secondo è da buttare via. Occhio, poi la
+padella sarà calda ed il burro schizzerà, mettete i pargoli a distanza di
+sicurezza.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/cuociamo-pancake-400x400-3f9c1f.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Con un mestolo prendete un po’ di impasto e lasciatelo cadere nella padella
+calda. Grazie alla fisica, prenderà da solo la forma ellittica ed inizierà a
+gonfiarsi. Fatelo cuocere fino a che non vedete in superficie qualche bolla
+d’aria che scoppia lasciando il buco (o al limite due minuti per lato). Poi
+prendete e giratelo dall’altra parte per far cuocere l’altro lato. &lt;/p&gt;
+
+&lt;p&gt;Mettete su un piatto e inondate di sciroppo d’acero.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pronti-pancake-400x400-9fd70a.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Consiglio. Non esagerate, anche se li avete fatti in casa sono una botta
+calorica.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/cuciniamo-i-pancake&quot;&gt;Cuciniamo i pancake&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on September 30, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Ai gay è vietato il carboidrato?]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/ai-gay-e-vietato-il-carboidrato" />
+  <id>http://thesp0nge.com/blog/ai-gay-e-vietato-il-carboidrato</id>
+  <published>2013-09-27T07:58:00+02:00</published>
+  <updated>2013-09-27T07:58:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;La differenza sostanziale che io vedo tra me ed un uomo, caucasico, di 37 anni
+omosessuale sono appunto i gusti in fatto di partner. La stessa differenza che
+ho con un 37enne caucasico a cui piacciono le bionde (per inciso io sono per le
+more) o con un 37enne caucasico a cui piace la silhouette filiforme e
+spigolosa.&lt;/p&gt;
+
+&lt;p&gt;Punto.&lt;/p&gt;
+
+&lt;p&gt;Credo che se un mio amico mi dicesse, &lt;em&gt;“sai, sono gay.”&lt;/em&gt; nella mia testa mi
+domanderei “&lt;em&gt;embhé?&lt;/em&gt;”. Ho le mie opinioni ferme sul concetto di famiglia, ma
+altrettanto sui gusti personali di una persona che sono, per l’appunto,
+personali ed in quanto tali da rispettare a prescindere.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Ecco... se voti il PDL... se credi veramente che Silvio Berlusconi sia uno&lt;br /&gt;statista perseguitato da una magistratura corrotta o se credi veramente che&lt;br /&gt;qualsiasi politico di ordine e grado sia veramente a Roma per il nostro bene&lt;br /&gt;allora rispetterò di più la tua opinione se te la tieni per te.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Ieri è esplosa la polemica quando Guido Barilla ha affermato che, pur
+rispettando le diversità e le coppie formate da persone dello stesso sesso,
+nelle sue campagne pubblicitarie avrebbe usato lo stereotipo della famiglia
+tradizionale: padre, madre che cucina e numero 2 figlioletti in un contesto
+famigliare bucolico ed in una cucina con i muri rigorosamente bianchi.
+Putiferio e gente che dice di voler boicottare la Barilla perché discrimina le
+minoranze.&lt;/p&gt;
+
+&lt;p&gt;Butto qui sul web 4 pensieri, &lt;strong&gt;sperando&lt;/strong&gt; le mie parole non vengano lette con
+lo spirito da guerriglia da stadio “etero vs omo/lesbo”. Se lo fate, pensate
+non sia una vostra strorpiatura mentale.&lt;/p&gt;
+
+&lt;h2 id=&quot;punto-a-la-pubblicit--lanima-del-commercio-a-caro-prezzo&quot;&gt;Punto A. La pubblicità è l’anima del commercio… a caro prezzo&lt;/h2&gt;
+
+&lt;p&gt;Guido Barilla è un imprenditore. Ha un budget da spendere in pubblicità e,
+viste le proporzioni della sua dittarella familiare, saranno cifre con almeno 6
+zeri dietro. Se io devo investire dei soldi nel dare un messaggio, quale può
+essere la mia platea? La più vasta possibile.&lt;/p&gt;
+
+&lt;p&gt;Qual è il target più grosso della Barilla? Tutti fanno la spesa e tutti
+comprano carboidrati, ma la maggioranza sono casalinghe. Politicamente
+scorretto? Implica il concetto “tu donna stai in cucina”?
+No. Vuol dire che su 100 persone che la sera alle 19 si mettono ai fornelli la
+maggioranza sono madri di famiglia.&lt;/p&gt;
+
+&lt;p&gt;Ora, dal punto di vista della pubblicità non mi sembra uno scandalo volermi
+rivolgere a loro perché loro rappresentano la maggior parte delle persone che
+poi andranno a fare la spesa e compreranno la pasta.&lt;/p&gt;
+
+&lt;p&gt;Disciminatorio? Ah perché voi avete visto negli spot uomini stempiati o
+vagamente sovrappeso? Cazzo… i biscotti del mulino li prepara Antonio
+Banderas… anche il vostro pasticcere era Zorro? Se fai sport ed hai bisogno
+di un integratore, ti sei accorto che l’immagine è quella di un corpo alla
+ironman? &lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Ma qualcuno con un briciolo di testa associa veramente l&#39;immagine della&lt;br /&gt;pubblicità con la società reale? Voi veramente mettete un dito su un aggeggio&lt;br /&gt;ed esclamando &quot;possiamo fare l&#39;amore&quot; cominciate a strusciarvi con la stessa&lt;br /&gt;passione di due 12enni alle prime armi su un divano stando perfettamente seduti&lt;br /&gt;e composti?&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;punto-b-embh-ha-detto-una-novit&quot;&gt;Punto B. Embhé? Ha detto una novità?&lt;/h2&gt;
+
+&lt;p&gt;Guido Barilla non vuole rappresentare una coppia di omosessuali che seduti a
+tavola cenano con la pasta. Nessuno si è accorto che questo è esattamente
+quello che ha fatto da almeno una settantina d’anni?&lt;/p&gt;
+
+&lt;p&gt;Non è che ha detto “basta, fino a ieri c’erano ma oggi niente gay nei miei
+spot”. Ha solo detto che continuerà ad usare lo stesso stereotipo. &lt;/p&gt;
+
+&lt;p&gt;Tu boicottatore che pensi che non comprando pasta Barilla, Giovanardi (e chi i
+gay li discrimina veramente) smetta di dire stronzate, dov’eri fino ad un paio
+di giorni fa? Perché il messaggio rassicurante che ci proietta in un’infanzia
+serena e gioiosa che magari non tutti hanno avuto, andava bene ma ora che Guido
+ha detto quello che fino a ieri ti ha dato in pasto allora non va più bene?
+Prima non era discriminatorio ma ora che l’hai sentito allora lo è? &lt;/p&gt;
+
+&lt;h2 id=&quot;punto-c-ok-per-boicottiamoli-tutti-allora-e-viviamo-nelleremitaggio&quot;&gt;Punto C. Ok… però boicottiamoli tutti allora e viviamo nell’eremitaggio&lt;/h2&gt;
+
+&lt;p&gt;Arriviamo al terzo punto quindi. A parte, mi sembra, Ikea e Oreo (che cmq ha
+fatto uno spot ad hoc per il gay pride) io di brand che nei loro spot si
+rivolgono alla minoranza invece che alla massa perdonatemi ma non ne vedo. E
+tutti ve lo fanno passare in cavalleria.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Dove&lt;/em&gt; coraggiosa con la sua campagnia dove esplicitamente mostra donne formose
+per dire che non solo le modelle possono lavarsi, ma ad esempio vi siete mai
+accorti che per avere la pelle lavata con un bagnoschiuma che vi avvolge come
+la seta dovete, con il vostro corpo ovviamente perfetto, strusciarvi sotto un
+getto di doccia lasciando intravedere tre quarti di tetta mentre fate piroette
+sotto l’acqua? (con buona pace di chi cerca di insegnare al proprio figlio che
+nella doccia si sta fermi?).&lt;/p&gt;
+
+&lt;p&gt;E i cereali? Che ci mostrano la stessa famiglia: madre (stupenda, in ordine e
+felice di alzarsi alle sette della mattina per preparare il lieto desinare),
+padre (sorridente con occhialetti e barba incolta e tanti capelli… cazzo…
+dannati riccioli ondulati… dove siete ora) e numero &lt;strong&gt;2&lt;/strong&gt; figli rigorosamente
+un maschio ed una femmina e rigorosamente coi capelli castani modello ovetto
+kinder lui e biondi modello angioletto lei. Sorridenti e con un’età (i pupi)
+assolutamente incompatibile con quella dei genitori.&lt;/p&gt;
+
+&lt;p&gt;Ah… è chiaro… se avete bimbi piccoli e la vostra cucina è un campo di
+battaglia alla mattina tra pianti e biberon, siete &lt;em&gt;out&lt;/em&gt;. Non siete il target.
+Soprattutto se vi accorgete a metà del caffé che la vostra pupattola ha il
+patello imbrattato di cacca e necessita l’helpdesk. Perché… ehi… i bimbi
+della pubblicità, ma in generale nessuno nella pubblicità fa la cacca.&lt;/p&gt;
+
+&lt;p&gt;A memoria, ma potrei sbagliare… nessuno vi porta negli spot l’omosessualità
+e, quando c’è da rappresentare la famiglia, tutti si barricano dietro lo
+stereotipo “Mulino Bianco”.
+Quindi… se pensate che boicottando veramente riusciamo ad avere un effetto
+positivo sulla nostra società è fantastico… ma allora boicottiamo tutti i
+prodotti che fanno spot TV. Fino ovviamente a quando non avranno come
+protagonisti &lt;em&gt;tutte&lt;/em&gt; le minoranze.&lt;/p&gt;
+
+&lt;p&gt;Nessuno si è accorto che, almeno in Italia, gli spot con persone di colore sono
+nulli? Secondo voi perché? Questa causa non merita una guerra ad hoc su
+twitter?&lt;/p&gt;
+
+&lt;h2 id=&quot;punto-d-guido-e-le-cadute-di-stile-sul-finale&quot;&gt;Punto D. Guido e le cadute di stile sul finale.&lt;/h2&gt;
+
+&lt;p&gt;Guido… cazzo… però invitare le persone che non la pensano come te e che si
+sono offese dalle tue parole a comprare pasta di altre marche è una cazzata
+immane, questo si discriminatorio secondo me. &lt;/p&gt;
+
+&lt;h2 id=&quot;off-by-one&quot;&gt;Off by one&lt;/h2&gt;
+
+&lt;p&gt;Secondo me non vinciamo la lotta contro la discriminazione con lotta di massa
+su twitter o boicottando un marchio. Lo facciamo partendo dal basso, educando i
+nostri figli alla tolleranza che passa nel considerare la dignità di ciascun
+individuo che si voglia relazionare con noi a prescindere da etnia, religione e
+gusti sessuali. Belle parole? &lt;/p&gt;
+
+&lt;p&gt;Finché gente si scanna per 22 bambolotti che corrono dietro ad una palla, di
+sicuro non si potrà parlare di vera tolleranza.&lt;/p&gt;
+
+&lt;p&gt;Ah… i carboidrati… boicottarli no, ma non tutti i giorni… che se no
+diventate ciccioni e allora nessuno spot vi rappresenterà più &lt;em&gt;(come se ora lo
+facessero)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Impegnamo le nostre energie nelle battaglie vere, nell’educare che il rispetto
+è alla base di una società civile e che la vita è troppo breve per passarla
+odiando qualcuno solo perché non la pensa come noi.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/6oL38QHAJOY?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Cheers.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/ai-gay-e-vietato-il-carboidrato&quot;&gt;Ai gay è vietato il carboidrato?&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on September 27, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[La fiera della tecnologia ICT: luci e ombre]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/la-fiera-della-tecnologia-ict-luci-e-ombre" />
+  <id>http://thesp0nge.com/blog/la-fiera-della-tecnologia-ict-luci-e-ombre</id>
+  <published>2013-09-19T08:01:00+02:00</published>
+  <updated>2013-09-19T08:01:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Su &lt;a href=&quot;http://armoredcode.com/blog/solid-as-diamond-talk-in-fiera-della-tecnolgia-ict-fair/&quot;&gt;armoredcode ho parlato&lt;/a&gt;
+del mio talk dalk punto di vista squisitamente tecnico. Oggi vi dico la mia
+sulla &lt;a href=&quot;http://www.fdtict.it&quot;&gt;Fiera della tecnologia ICT&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Dico subito, a scanso di equivoci che l’organizzazione ha fatto un ottimo
+lavoro; non è facile inventarsi un nuovo evento in un mercato, quello della
+tecnologia in Italia zeppo, mi si perdoni il francesismo, di miopi e spilorci.
+Non tutti sono così certo, ma vedendo quanto sia difficile elemosinare un po’
+di soldi per eventi del genere e vedendo che accade solo qui in Italia mi viene
+in mente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;o siamo spilorci (sì perché la crisi c’è ovunque)&lt;/li&gt;
+  &lt;li&gt;o in fondo della tecnologia non frega a nessun big player&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;le-luci&quot;&gt;Le luci&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;L’informazione.&lt;/em&gt; Chi nn sapeva arrivare al padiglione fieristico aveva
+abbondanti indicazioni ed una navetta gratuita che faceva la spola con la
+metropolitana di Lotto. Ottima la partnership con Italo per chi veniva da
+lontano.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I laboratori.&lt;/em&gt; In sala 6 sono stati organizzati dei talk più lunghi del normale
+con anche esercitazioni pratiche. Veramente bello. Io ho seguito per un po’ il
+talk sulla Sicurezza delle Applicazioni Web e ne sono stato veramente
+impressionato.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Gli stand.&lt;/em&gt; Come ogni fiera che si rispetti c’erano gli espositori. Tanti e
+variegati. Veramente molto variegati, si andava da
+&lt;a href=&quot;http://www.checkpoint.com&quot;&gt;Checkpoint&lt;/a&gt; che produce apparati di sicurezza
+informatica perimetrale (cose di firewall, intrusion prevention, … se non
+sapete cosa siano, non fa niente… vivete lo stesso mentre se li conoscete
+sapete che sono belli grossi) fino a piccole ma eccellenti realtà come
+&lt;a href=&quot;http://www.nuzoo.it&quot;&gt;Nuzoo&lt;/a&gt; di un amico delle superiore che sta facendo
+impresa nel campo della robotica e automazione (&lt;em&gt;disclaimer&lt;/em&gt; essendo un amico
+potrei essere poco obiettivo… però sinceramente i robot che costruiscono sono
+una figata).
+Qui si può fare business, per chi vuole. &lt;strong&gt;QUI PERO’&lt;/strong&gt; non nei talk (ne parlo
+dopo nelle ombre).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I talk.&lt;/em&gt; La maggior parte, per fortuna, dei talk è di una qualità
+impressionante, merito sia di chi li ha proposti che del comitato organizzatore
+chiaramente. Si è parlato di tutto, dall’introduzione di Linux in azienda fino
+all’errata percezione dell’hacker data dai film e serie televisive.&lt;/p&gt;
+
+&lt;h2 id=&quot;le-ombre&quot;&gt;Le ombre&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;L’accoglienza.&lt;/em&gt; Sarà che sono stato colpito da
+&lt;a href=&quot;http://www.railsberry.com&quot;&gt;railsberry&lt;/a&gt; però persino il tanto amato
+&lt;a href=&quot;http://www.webb.it&quot;&gt;WebbIT&lt;/a&gt; dava una maglietta o qualche gadget al relatore.
+Il badge dei relatori era nettamente più brutto di quello dei visitatori: una
+tessera plastificata contro un bel cartoncino grosso, colorato con persino lo
+slogan “Keep calm, you’re at Fiera…”.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Il catering.&lt;/em&gt; 1€ un caffé servito in un bicchierino di carta. Ho detto tutto.
+Non so se il catering è stato imposto da MilanoFiera ma, la prossima volta, è
+meglio se gli organizzatori cercano più sponsor (magari all’estero visto che
+sembra che la crisi l’abbiamo solo noi) ma offrono un catering migliore, magari
+a prezzi più contenuti. Sarebbe fantastico se, visto il contesto, caffé e
+beveraggi fossero gratis.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Il dress code.&lt;/em&gt; Ci avevano investito tanto sull’informalità. Sia nelle email
+di conferma, sia su facebook, sia su twitter venivamo invitati tutti a non
+venire in giacca e cravatta. Ovviamente l’italiano medio ha il prurito quando
+qualcuno da una regola, quindi… almeno il 60% delle persone era in giacca e
+cravatta. Sinceramente un formalismo che capisco se devi parlare con il CEO di
+qualche grande società… se devi parlare di tecnologia o esporre un talk, lo
+trovo un po’ ridicolo visto che magari anche al matrimonio del tuo migliore
+amico eri vestito così.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I talk.&lt;/em&gt; La cosa che non mi è andata giù di alcuni talk è stato il taglio
+commerciale. Alcuni talk tecnici erano organizzati con due relatori in modo che
+uno facesse un’introduzione di 10 minuti sull’appliance o sul prodotto che
+producevano, altri hanno detto con fierezza che nonostante gli organizzatori
+avevano chiesto talk non commerciali loro avrebbero fatto marchetta lo stesso.
+Io come relatore ho dovuto firmare tanto di lettera con codice di condotta da
+seguire dove mi si diceva che il mio talk non poteva essere commerciale. Ho
+firmato una cosa per me ovvia, ma evidentemente all’Italiano che ha il
+&lt;em&gt;bisniss&lt;/em&gt; nel sangue il concetto di regola proprio non va giù. 
+Area espositiva = commercio… buisiness. Talk = approfondimento tecnologico /
+divulgativo. Non vi vuole un Enrico Fermi per capirlo.&lt;/p&gt;
+
+&lt;h2 id=&quot;quindi&quot;&gt;Quindi&lt;/h2&gt;
+
+&lt;p&gt;In realtà mi sono divertito, è stato veramente un bell’evento e spero che
+l’anno prossimo sia un po’ più grande e magari di più ampio respiro però… non
+chiamiamola l’alternativa al WebbIT… quella era veramente tutta un’altra
+magia.&lt;/p&gt;
+
+&lt;p&gt;Enjoy it!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/la-fiera-della-tecnologia-ict-luci-e-ombre&quot;&gt;La fiera della tecnologia ICT: luci e ombre&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on September 19, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Ciao mondo... ancora]]></title>
+  <link rel="alternate" type="text/html" href="http://thesp0nge.com/blog/ciao-mondo-dot-dot-dot-ancora" />
+  <id>http://thesp0nge.com/blog/ciao-mondo-dot-dot-dot-ancora</id>
+  <published>2013-09-17T08:29:00+02:00</published>
+  <updated>2013-09-17T08:29:00+02:00</updated>
+  <author>
+    <name>Paolo Perego</name>
+    <uri>http://thesp0nge.com</uri>
+    <email>paolo@armoredcode.com</email>
+  </author>
+  <content type="html">&lt;h2 id=&quot;tanti-anni-son-passati&quot;&gt;Tanti anni son passati…&lt;/h2&gt;
+
+&lt;p&gt;In realtà è passato poco più di un anno dall’ultimo post e la situazione
+dell’editoria italiana non è affatto cambiata. Se vuoi leggere i quotidiani
+online è meglio se ti doti di un iPad o di un tabled Android.&lt;/p&gt;
+
+&lt;p&gt;E’ nata Anna, la mia seconda figlia che sta per muovere i primi gattonamenti
+alla conquista del mondo. Daniele ormai il mondo ce l’ha in pugno, solo deve
+affinare la pronuncia delle parole che contengono la ‘r’.&lt;/p&gt;
+
+&lt;p&gt;Il mio ginocchio a 2 anni dall’infortunio e uno e mezzo dall’intervento ormai è
+riabilitato e continuo a praticare &lt;a href=&quot;http://www.fitae-itf.com&quot;&gt;taekwondo-itf&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;e-quindi-ciao-mondo-ancora&quot;&gt;E quindi Ciao mondo… ancora&lt;/h2&gt;
+
+&lt;p&gt;Quindi, dopo molti riavvii degni delle peggiori storie dell’informatica
+moderna, il blog The Kitchen parte ancora.&lt;/p&gt;
+
+&lt;p&gt;Di cosa cosa scriverò qui? Bhé… musica, libri, vita, gtd, Milano, famiglia,
+bimbi, taekwondo, un po’ di tutto insomma. Non è un blog tecnologico… se vi
+servono cose relative su application security andate su
+&lt;a href=&quot;http://armoredcode.com&quot;&gt;armoredcode.com&lt;/a&gt;. Sempre roba mia, sempre roba buona. &lt;/p&gt;
+
+&lt;p&gt;Enjoy it!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://thesp0nge.com/blog/ciao-mondo-dot-dot-dot-ancora&quot;&gt;Ciao mondo... ancora&lt;/a&gt; was originally published by Paolo Perego at &lt;a href=&quot;http://thesp0nge.com&quot;&gt;The Kitchen&lt;/a&gt; on September 17, 2013.&lt;/p&gt;</content>
+</entry>
+
+</feed>
